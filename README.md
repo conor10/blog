@@ -1,5 +1,3 @@
-README.md
-
 ## Setup
 
 ```
@@ -9,7 +7,7 @@ cd blog
 
 curl -LO https://github.com/adisaktijrs/hexo-theme-minima/archive/refs/tags/v2.0.zip
 
-hexo new test
+hexo new <postname>
 hexo server
 ```
 

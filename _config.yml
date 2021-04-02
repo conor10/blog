@@ -103,3 +103,6 @@ theme: minima
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Google Analytics ID
+google_analytics: G-745MX28HDV
