@@ -1,0 +1,59 @@
+---
+title: "Why non-engineers ship unmaintainable code with AI agents"
+description: "Coding agents are optimised to appease the operator, not to think critically. Without an operator who understands engineering, you get working demos that fall apart the moment anyone tries to maintain them."
+date: 2026-05-13
+tags: [agentic-engineering, workflow]
+---
+
+## Why non-engineers ship unmaintainable code with AI agents
+
+Working with coding agents creates addictive feedback loops. The agent is optimised to craft a response, not push back on your questions. This creates an illusion of progress, where the agent is trying to appease you, rather than thinking critically about what you've asked it to do.
+
+This is fine if you're creating a personal project, or quickly throwing together a prototype, but inadequate if you're trying to build a real product.
+
+Being attuned to one's environment is crucial. Providing adequate context for the task at hand helps the agent take its surroundings into account.
+
+The challenge I see with many of the people embracing agentic engineering is that the context they bring is often limited to their own world-view or skillset.
+
+People working with agents may have ideas of **what** they want an agent to build. But unless they understand software engineering, they are unlikely to be concerned with **how** it is built. 
+
+This is not a problem when building a simple prototype or personal tool. But if you're trying to build something other people rely on such as a project, service or business, it's unlikely to work in the way you envisioned.
+
+The tight human-agent feedback loop can all too easily result in the appearance of rapid progress, with the agent being your own personal hype-man, making you feel good about what you're building, when in fact people need to take a step back and reflect on what their agent is doing and if it is actually a good idea given their surroundings.
+
+This ability to take a step back and question the bigger picture, sometimes referred to as ***metathinking***, is a trait of human intelligence which machines have not developed. It matters especially when working with LLMs which are happy to endlessly work on a problem if their operator asks them to.
+
+Machines take a brute-force approach to solving problems, and because LLMs are so good at this brute-force approach, it's all too easy to chase the wrong solutions.
+
+It's no different from a developer wasting time working on the wrong feature for a product, because someone didn't adequately describe what was needed.
+
+The problem is this illusion of progress can magnify this and create unmaintainable codebases very quickly.
+
+Even if someone is working on the right problem, they may lack the right intuition about the agent's environment to guide it appropriately. If a person does not tell their agent to follow good engineering practices, such as separating concerns and delineating appropriately between components, they will end up with an increasingly chaotic code base, where their agent is optimising for operator happiness over a well structured environment. 
+
+I was recently reviewing a friend's code they had put together to enhance an AI personal assistant on [Hermes](https://hermes-agent.nousresearch.com/). Hermes is an AI personal assistant with persistent memory across conversations. They had something that worked, but it was tightly coupled to Hermes.
+
+They had effectively created their own distribution of Hermes to solve their problem. On the surface this is reasonable, but there were two glaring issues I saw with this approach:
+1. They would be responsible for updating their code every time there were any changes to the Hermes installation process.
+2. It couldn't target an existing Hermes installation.
+
+I worked with my agent to examine the codebase properly, but the crucial thing that had been missing from my friend's work had been asking his agent to ensure that his code followed clean architectural patterns.
+
+A prompt as simple as the below would have prevented these issues.
+
+> “Integrate with Hermes as an external dependency, not as an embedded platform.”
+
+Passing this prompt to their agent can subsequently fix the issue. However, it cannot guarantee that nothing breaks, and following a major architectural change to the codebase, significant amounts of testing will be required.
+
+Herein lies one of the significant issues facing non-engineers building products with LLMs. Optimising for maintenance and stability is unlikely to be front of mind, but in order to provide a high-quality product for end-users, it cannot be overlooked. 
+
+When someone asks an LLM to add a feature or fix an issue, they are unlikely to be cognisant of the change happening behind the scenes.
+
+An experienced engineer is able to bring a wider contextual understanding of the business or underlying technology into their decision-making. An LLM cannot do this without being asked.
+
+Hence with the proliferation of products being summoned into existence via an LLM, the quality and reliability of these products is often poor.
+
+This isn't to detract from the ability of LLMs to create software — they can do a brilliant job, and my engineers use them for their coding. But without an operator who understands good engineering, what gets built isn't a product, but a prototype that breaks as soon as anyone tries to change it.
+
+
+
