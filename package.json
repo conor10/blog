@@ -17,6 +17,9 @@
     "astro": "^5.0.0",
     "astro-og-canvas": "^0.11.1",
     "canvaskit-wasm": "^0.41.1",
+    "katex": "^0.17.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "vega": "^6.2.0",
     "vega-lite": "^6.4.2"
   }

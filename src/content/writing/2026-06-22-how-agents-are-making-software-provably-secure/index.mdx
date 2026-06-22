@@ -1,0 +1,91 @@
+---
+title: "How agents are making software provably secure"
+description: "Agentic development is fuelling a resurgence in formal verification, enabling engineers to go beyond simply testing, to mathematically prove the robustness of software."
+date: 2026-06-22
+tags: [formal-verification, security, ethereum]
+---
+
+Software engineering in the traditional sense may be dead, but coding agents have created opportunities to bring rigour to software that was previously a pipe dream of engineers.
+
+Agentic development has not only sped up traditional software development, providing engineering productivity gains of 20% to 50% depending on who you listen to, but also made development possible using techniques such as formal verification that historically were considered too slow or expensive to apply to a more mainstream engineering setting.
+
+Formal verification extends far beyond traditional testing practices such as unit, integration, end-to-end and performance testing and instead achieves the holy grail of demonstrating robustness of software — that it is provably correct against a specification from a mathematical perspective.
+
+Formal verification software has existed since the 1970s, and alongside functional programming, has remained a niche of software engineering, with many advocates of it due to the safety guarantees they provide. But adoption has been limited due to the steeper learning curves required for functional programming alongside the theoretical maths required for formal verification. 
+
+Developing applications with pure functional languages is very robust, but time consuming compared with the imperative approach favoured by most programmers.
+
+Verifying code with formal methods adds another layer on top of this, making it a significant undertaking if used for non-mission critical infrastructure.
+
+These barriers are now being challenged by LLMs. With the advent of agents taking on significant swaths of coding tasks, this doesn't only apply to writing code, but testing and even proving it. Agents can now generate proofs to demonstrate the robustness of the code they are delivering.
+
+This enables developers to see proof that code behaves as expected, which is far more significant than referring to generating tests or taking an agent's word for it.
+
+It's also gaining traction in Web3, where there's been hundreds of millions of dollars lost due to bugs in smart contract based applications. Pairing formal verification with smart contracts provides a level of resilience beyond what code audits alone can catch.
+
+## Getting Lean
+
+There are a number of different software tools that can be used to assist with formal verification. Historically they were stand-alone tools for verification tasks, however, this has changed in recent years with the advent of [Lean](https://lean-lang.org/). Lean is both a proof assistant and functional programming language that has seen it gaining significant traction among mathematicians, researchers and developers.
+
+Fields medalist Terence Tao, DeepMind and OpenAI are just some of the people and organisations embracing Lean to accelerate the field of maths which speaks to its influence. 
+
+To provide a simple example of the power of formal verification, imagine we have a function that transfers an amount of tokens from Alice to Bob. These can be defined in Lean as follows:
+
+```lean
+def transfer (alice bob amount : Nat) : Nat × Nat :=
+  if amount ≤ alice then
+    (alice - amount, bob + amount)
+  else
+    (alice, bob)
+```
+
+Normally tests for this code would be a series of statements verifying transfers are performed correctly.
+
+```lean
+#eval transfer 100 100 25
+-- (75, 125)
+#eval transfer 100 100 1000  -- invalid quantity provided
+-- (100, 100)
+```
+
+However, instead of getting tests to be crafted, we could formally verify our function, to provide a guarantee that the total number of tokens held by Alice and Bob will never change following application of this function.
+
+```lean
+theorem transfer_preserves_supply
+    (alice bob amount : Nat) :
+    (transfer alice bob amount).fst +
+    (transfer alice bob amount).snd =
+    alice + bob := by
+  by_cases h : amount ≤ alice
+  · simp [transfer, h]
+    omega
+  · simp [transfer, h]
+```
+
+The proof is more complex to write than a test, but provides far stronger guarantees about the code, which is why getting agents to assist is valuable.
+
+It's important to keep in mind that this is a simple example to convey the essence of formal verification, but in reality these proofs are far more complex.
+
+## Securing Ethereum
+
+Recognising the power of formal verification, Vitalik Buterin, creator of the Ethereum blockchain recently [wrote about it on his personal blog](https://vitalik.eth.limo/general/2026/05/18/fv.html).
+
+There are a number of other initiatives happening in the Ethereum ecosystem using formal verification. Recently the [Verity](https://veritylang.com/) language emerged for writing smart contracts in Lean alongside a developer toolchain for it, [Tama](https://tama.tools/).
+
+The [Verifereum](https://verifereum.org/) project is developing formal semantics of the Ethereum Virtual Machine (EVM) using the HOL4 theorem prover. The Vyper smart contract language is doing something similar with [Vyper-HOL](https://github.com/verifereum/vyper-hol).
+
+There's even a [prototype version of a zero-knowledge zkEVM](https://github.com/Verified-zkEVM/evm-asm) being developed in Lean.
+
+## Formal verification elsewhere
+
+Outside of Ethereum and web3, Jane Street are [building a team to focus on formal methods](https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1) as agents have made it financially feasible for them to do so.
+
+There's also a number of new AI companies focussed on improving mathematical infrastructure for AI, including [Axiom](https://axiommath.ai/) and [Logos Research](https://www.logosresearch.ai/).
+
+With the explosion of coding agents, AI research and the need for more secure software, formal methods are having a resurgence which is unlikely to be short-lived. 
+
+The barriers to utilising them have dropped significantly, and as organisations become more dependent on agentic workflows, having confidence in the quality, reliability and safety of these systems will become ever more important.
+
+However, in a similar vein to how coding agents don't alleviate the need for programmers who still need to oversee their work, formally verified code is only as good as the specifications it's being verified against. You still need experts who can verify the quality of the outputs. 
+
+We may be entering a new era of software engineering with formal verification being embraced. But without the right expertise onboard to monitor the quality of its work, you can still end up with slop, even if it has been formally verified.
