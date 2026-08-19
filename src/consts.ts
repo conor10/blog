@@ -1,6 +1,6 @@
 export const SITE_TITLE = 'Conor Svensson';
 export const SITE_DESCRIPTION =
-  'Technical founder building agentic infrastructure and tooling for the decentralised web.';
+  'Technical founder working on agentic engineering and evals for regulated industries.';
 export const SITE_URL = 'https://conorsvensson.com';
 export const AUTHOR = 'Conor Svensson';
 export const AUTHOR_TWITTER = '@ConorSvensson';
