@@ -6,7 +6,7 @@ tags: [agentic-engineering, collaboration, workflow]
 draft: false
 ---
 
-Agents excel at collaborating with individuals, less so with teams. The team collaboration challenges are well recognised, with a plethora of new tooling being created to cater for this including [QM](https://github.com/yc-software/qm), [Buzz](https://buzz.xyz/), [Xirp](https://xirp.spotify.com/), [Centaur](https://centaur.run/), [GitHub Copilot app](https://github.com/features/ai/github-app), OpenClaw, Claude Tag, and Hermes (some of which I covered [here](/writing/from-private-chats-to-shared-agents/)).
+Agents excel at collaborating with individuals, less so with teams. The team collaboration challenges are well recognised, with a plethora of new tooling being created to cater for this including [QM](https://github.com/yc-software/qm), [Buzz](https://buzz.xyz/), [Xirp](https://xirp.spotify.com/), [Centaur](https://centaur.run/), [GitHub Copilot app](https://github.com/features/ai/github-app), [OpenClaw](https://openclaw.ai/), [Claude Tag](https://www.anthropic.com/news/introducing-claude-tag), and [Hermes](https://hermes-agent.nousresearch.com/) (some of which I covered [here](/writing/from-private-chats-to-shared-agents/)).
 
 This explosion of tools highlights how much of an unsolved problem this is. Chat interfaces and coding agents for individuals do have a level of maturity with ChatGPT and Claude being well established for the former, and Claude Code, Codex, Cursor and Copilot for the latter.
 
@@ -85,7 +85,7 @@ Assuming you're following this workflow, with each feature or deliverable you wo
 
 Tying this together, you have a manifest file which is associated with each run which summarises all of the artefacts associated with the feature request.
 
-An example manifest output is below.
+A sample manifest output taken from a recent project is below.
 
 ```sh
 date: 2026-07-20
@@ -115,6 +115,7 @@ artifacts:
   - implementer-summary.md
   - judge-output.md
 ```
+*The manifest output summarises key information about the inputs and outputs used by your agentic workflows*
 
 With this approach you have a full set of historical artefacts for your project, which makes it easier for multiple people or agents to collaborate independently as well as get up to speed on it.
 
