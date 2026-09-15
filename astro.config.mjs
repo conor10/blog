@@ -6,6 +6,9 @@ import rehypeKatex from 'rehype-katex';
 
 export default defineConfig({
   site: 'https://conorsvensson.com',
+  redirects: {
+    '/books/': '/reading/',
+  },
   integrations: [mdx(), sitemap()],
   markdown: {
     remarkPlugins: [remarkMath],

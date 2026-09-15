@@ -7,10 +7,44 @@ const isActive = (prefix: string) =>
 ---
 <header class="site-header">
   <a href="/" class="brand">Conor Svensson</a>
-  <nav>
-    <a href="/writing/" class:list={[{ active: isActive('/writing') }]}>Writing</a>
-    <a href="/about/" class:list={[{ active: isActive('/about') }]}>About</a>
-    <a href="/advisory/" class:list={[{ active: isActive('/advisory') }]}>Advisory</a>
-    <ThemeToggle />
+  <nav aria-label="Main navigation">
+    <a href="/writing/" class:list={[{ active: isActive('/writing') }]} aria-current={isActive('/writing') ? 'page' : undefined}>Writing</a>
+    <a href="/reading/" class:list={[{ active: isActive('/reading') }]} aria-current={isActive('/reading') ? 'page' : undefined}>Reading</a>
+    <a href="/about/" class:list={[{ active: isActive('/about') }]} aria-current={isActive('/about') ? 'page' : undefined}>About</a>
+    <a href="/advisory/" class:list={[{ active: isActive('/advisory') }]} aria-current={isActive('/advisory') ? 'page' : undefined}>Advisory</a>
   </nav>
+  <ThemeToggle />
 </header>
+
+<style>
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+  }
+
+  .site-header .brand,
+  .site-header nav a,
+  .site-header :global(.theme-toggle) {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 40rem) {
+    .site-header {
+      grid-template-columns: minmax(0, 1fr) auto;
+      row-gap: 0.85rem;
+    }
+
+    .site-header nav {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      gap: 0.5rem 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .site-header :global(.theme-toggle) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+</style>
