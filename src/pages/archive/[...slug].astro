@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import PostCitation from '../../components/PostCitation.astro';
+import { archiveSources } from '../../data/archive';
+import { renderArchiveHtml } from '../../utils/archive.mjs';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('archive')).sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
+  return posts.map((post, index) => ({
+    params: { slug: post.id },
+    props: { post, older: posts[index - 1], newer: posts[index + 1] },
+  }));
+}
+const { post, older, newer } = Astro.props;
+const { title, description, date, source, originalUrl, snapshotUrl, featuredImage, html } = post.data;
+---
+<BaseLayout title={title} description={description} type="article" publishedTime={date} image={featuredImage?.src}>
+  <article class="prose archive-article">
+    <a class="back-link" href="/archive/">← All archived writing</a>
+    <header>
+      <h1>{title}</h1>
+      <div class="post-meta"><FormattedDate date={date} /><span aria-hidden="true">·</span><a href={`/archive/?source=${source}`}>{archiveSources[source].name}</a></div>
+      <p class="archive-origin">
+        Originally published on {source === 'newsletter'
+          ? <a href={originalUrl}>{archiveSources[source].domain}</a>
+          : archiveSources[source].domain}.
+        <a href={snapshotUrl}>{source === 'newsletter' ? 'View saved copy ↗' : 'View saved original ↗'}</a>
+      </p>
+    </header>
+    {featuredImage && <img class="archive-featured-image" src={featuredImage.src} alt={featuredImage.alt} width={featuredImage.width} height={featuredImage.height} fetchpriority="high" decoding="async" />}
+    <div class="archive-body" set:html={await renderArchiveHtml(html)} />
+    <PostCitation title={title} date={date} />
+    <nav class="archive-pagination" aria-label="Archived posts">
+      <div>{older && <a href={`/archive/${older.id}/`}><span>← Older</span>{older.data.title}</a>}</div>
+      <div>{newer && <a href={`/archive/${newer.id}/`}><span>Newer →</span>{newer.data.title}</a>}</div>
+    </nav>
+  </article>
+</BaseLayout>
+
+<style>
+  .back-link { font-size: 0.85rem; }
+  .archive-article h1 { margin-top: 1rem; overflow-wrap: anywhere; }
+  .post-meta { margin-bottom: 1rem; }
+  .archive-origin { padding: 0.85rem 1rem; border-left: 2px solid var(--border); color: var(--fg-muted); font-size: 0.85rem; margin-bottom: 2rem; }
+  .archive-body { overflow-wrap: anywhere; }
+  .archive-featured-image { display: block; width: 100%; height: auto; margin: 0 0 2rem; border-radius: var(--radius); }
+  .archive-body :global(pre) { overflow-wrap: normal; white-space: pre; background: var(--bg-muted); }
+  .archive-body :global(table) { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+  .archive-body :global(td), .archive-body :global(th) { border: 1px solid var(--border); padding: 0.35rem 0.65rem; }
+  .archive-body :global(.katex-display) { overflow-x: auto; overflow-y: hidden; padding: 0.5rem 0; }
+  .archive-body :global(img) { display: block; margin: 1.5rem auto; }
+  .archive-body :global(.archive-missing-image) { display: block; border: 1px solid var(--border); padding: 1rem; margin: 1.5rem 0; font-size: 0.85rem; }
+  .archive-pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 3rem; font-size: 0.9rem; }
+  .archive-pagination span { display: block; font-size: 0.8rem; color: var(--fg-muted); margin-bottom: 0.3rem; }
+  .archive-pagination > div:last-child { text-align: right; }
+</style>

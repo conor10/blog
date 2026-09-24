@@ -1,0 +1,1314 @@
+[
+  {
+    "source": "blogspot",
+    "slug": "dtrace",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2004/08/dtrace.html",
+        "timestamp": "20060502015530"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "welcome-to-my-blog",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2004/08/welcome-to-my-blog.html",
+        "timestamp": "20060428220537"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "oracle-linux-unworkable",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2004/09/oracle-linux-unworkable.html",
+        "timestamp": "20070824112724"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "its-been-while",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2005/02/its-been-while.html",
+        "timestamp": "20050604030452"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "south-park",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2005/05/south-park.html",
+        "timestamp": "20070822004711"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "1st-london-opensolaris-user-group",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2005/06/1st-london-opensolaris-user-group.html",
+        "timestamp": "20070118070841"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "all-new-acer-ferrari",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2005/06/all-new-acer-ferrari.html",
+        "timestamp": "20070822195230"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "joys-of-new-acer-laptop-opensolaris",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2005/08/joys-of-new-acer-laptop-opensolaris.html",
+        "timestamp": "20051212224545"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "using-gdm-instead-of-dtlogin-on-nevada",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2005/08/using-gdm-instead-of-dtlogin-on-nevada.html",
+        "timestamp": "20051013143707"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "fixing-broken-laptop-replacing-those",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2007/01/fixing-broken-laptop-replacing-those.html",
+        "timestamp": "20070822195344"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "free-drivers-on-linux",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2007/01/free-drivers-on-linux.html",
+        "timestamp": "20070822195219"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "my-resolution-to-update-this-blog-more",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2007/01/my-resolution-to-update-this-blog-more.html",
+        "timestamp": "20070822195252"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "nice-text-about-cpu-architecture",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2007/01/nice-text-about-cpu-architecture.html",
+        "timestamp": "20070822004716"
+      }
+    ]
+  },
+  {
+    "source": "blogspot",
+    "slug": "converting-i386-to-x86-64-assembler",
+    "candidates": [
+      {
+        "url": "http://csvensson.blogspot.com:80/2007/02/converting-i386-to-x86-64-assembler.html",
+        "timestamp": "20070822195236"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "roulette-pnl-simulation-in-matlab",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/08/18/roulette-pnl-simulation-in-matlab/",
+        "timestamp": "20160322014408"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2014/08/18/roulette-pnl-simulation-in-matlab/",
+        "timestamp": "20180406223313"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "processing-excel-data-sources-in-python",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/08/25/processing-excel-data-sources-in-python/",
+        "timestamp": "20160322015315"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2014/08/25/processing-excel-data-sources-in-python/",
+        "timestamp": "20180531133119"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "adding-a-logger-to-your-applications",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/09/08/adding-a-logger-to-your-applications/",
+        "timestamp": "20160506111523"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2014/09/08/adding-a-logger-to-your-applications/",
+        "timestamp": "20171117133117"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "processing-excel-dates-in-matlab-on-os-x",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/09/15/processing-excel-dates-in-matlab-on-os-x/",
+        "timestamp": "20160130001851"
+      },
+      {
+        "url": "http://conorsvensson.com/2014/09/15/processing-excel-dates-in-matlab-on-os-x/",
+        "timestamp": "20190425084044"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "make-your-trading-algorithms-more-stable-with-unit-testing",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/09/30/make-your-trading-algorithms-more-stable-with-unit-testing/",
+        "timestamp": "20160624061213"
+      },
+      {
+        "url": "http://conorsvensson.com/2014/09/30/make-your-trading-algorithms-more-stable-with-unit-testing/",
+        "timestamp": "20190423150724"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "deciphering-the-signal-from-the-noise-what-languages-should-you-write-trading-applications-in",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/10/13/deciphering-the-signal-from-the-noise-what-languages-should-you-write-trading-applications-in/",
+        "timestamp": "20160506164354"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2014/10/13/deciphering-the-signal-from-the-noise-what-languages-should-you-write-trading-applications-in/",
+        "timestamp": "20170530021628"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "volatility-cones-a-secret-weapon-in-options-trading",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/11/24/volatility-cones-a-secret-weapon-in-options-trading/",
+        "timestamp": "20160106140932"
+      },
+      {
+        "url": "http://quanttech.co/2014/11/volatility-cones-a-secret-weapon-in-options-trading/",
+        "timestamp": "20141206135943"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2014/11/24/volatility-cones-a-secret-weapon-in-options-trading/",
+        "timestamp": "20170528012104"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "auto-validating-python-trading-models-with-excel",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/12/08/auto-validating-python-trading-models-with-excel/",
+        "timestamp": "20160106141754"
+      },
+      {
+        "url": "http://quanttech.co/2014/12/auto-validating-python-trading-models-with-excel/",
+        "timestamp": "20150403060448"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2014/12/08/auto-validating-python-trading-models-with-excel/",
+        "timestamp": "20170530020053"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "parkinson-versus-close-to-close-volatility-estimators",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2014/12/26/parkinson-versus-close-to-close-volatility-estimators/",
+        "timestamp": "20160106140154"
+      },
+      {
+        "url": "http://quanttech.co/2014/12/parkinson-versus-close-to-close-volatility-estimators/",
+        "timestamp": "20150404002149"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2014/12/26/parkinson-versus-close-to-close-volatility-estimators/",
+        "timestamp": "20170824143514"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "modelling-asset-returns-with-brownian-motion",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/02/09/modelling-asset-returns-with-brownian-motion/",
+        "timestamp": "20160314113119"
+      },
+      {
+        "url": "http://quanttech.co/2015/02/modelling-asset-returns-with-brownian-motion/",
+        "timestamp": "20150404230039"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2015/02/09/modelling-asset-returns-with-brownian-motion/",
+        "timestamp": "20170525102608"
+      },
+      {
+        "url": "http://conorsvensson.com/2015/02/modelling-asset-returns-with-brownian-motion/",
+        "timestamp": "20190424032205"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "slides-from-my-talk-scalasyd",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/03/11/slides-from-my-talk-scalasyd/",
+        "timestamp": "20150528233928"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2015/03/11/slides-from-my-talk-scalasyd/",
+        "timestamp": "20180506000704"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "visualising-strategy-drawdowns",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/03/23/visualising-strategy-drawdowns/",
+        "timestamp": "20150528205028"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2015/03/23/visualising-strategy-drawdowns/",
+        "timestamp": "20170526132032"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "calculating-realistic-strategy-returns",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/04/20/calculating-realistic-strategy-returns/",
+        "timestamp": "20150523082250"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2015/04/20/calculating-realistic-strategy-returns/",
+        "timestamp": "20180506001444"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "upcoming-talk-scala-for-business-automation-yowwest",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/04/27/upcoming-talk-scala-for-business-automation-yowwest/",
+        "timestamp": "20150523163413"
+      },
+      {
+        "url": "http://conorsvensson.com/2015/04/27/upcoming-talk-scala-for-business-automation-yowwest/",
+        "timestamp": "20190423222916"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "slides-from-my-talk-yowwest",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/05/30/slides-from-my-talk-yowwest/",
+        "timestamp": "20150530092308"
+      },
+      {
+        "url": "http://conorsvensson.com/2015/05/30/slides-from-my-talk-yowwest/",
+        "timestamp": "20190424001334"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "quickly-run-up-microservices-for-your-trading-apps",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/06/23/quickly-run-up-microservices-for-your-trading-apps/",
+        "timestamp": "20150624053433"
+      },
+      {
+        "url": "http://conorsvensson.com/2015/06/23/quickly-run-up-microservices-for-your-trading-apps/",
+        "timestamp": "20190423093348"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "vix-futures-expiry-dates",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/06/29/vix-futures-expiry-dates/",
+        "timestamp": "20150630070501"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2015/06/29/vix-futures-expiry-dates/",
+        "timestamp": "20180529032558"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "variance-factors-on-vix-futures-i-synthetic-futures",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/07/07/variance-factors-on-vix-futures-i-synthetic-futures/",
+        "timestamp": "20150708070334"
+      },
+      {
+        "url": "http://conorsvensson.com:80/2015/07/07/variance-factors-on-vix-futures-i-synthetic-futures/",
+        "timestamp": "20171231053442"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "variance-factors-on-vix-futures-ii-principal-component-analysis",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/07/14/variance-factors-on-vix-futures-ii-principal-component-analysis/",
+        "timestamp": "20150715052118"
+      },
+      {
+        "url": "http://conorsvensson.com/2015/07/14/variance-factors-on-vix-futures-ii-principal-component-analysis/",
+        "timestamp": "20170909185435"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "lazy-garch",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2015/07/21/lazy-garch/",
+        "timestamp": "20150722031244"
+      },
+      {
+        "url": "http://conorsvensson.com/2015/07/21/lazy-garch/",
+        "timestamp": "20170910032744"
+      }
+    ]
+  },
+  {
+    "source": "quanttech",
+    "slug": "ether-mining-101",
+    "candidates": [
+      {
+        "url": "http://quanttech.co/2016/07/01/ether-mining-101/",
+        "timestamp": "20160701174746"
+      },
+      {
+        "url": "http://conorsvensson.com/2016/07/01/ether-mining-101/",
+        "timestamp": "20170705095210"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "announcing-web3j-a-lightweight-java-library-for-connecting-to-nodes-on-the-ethereum-blockchain",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2016/09/18/announcing-web3j-a-lightweight-java-library-for-connecting-to-nodes-on-the-ethereum-blockchain/",
+        "timestamp": "20170424042240"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "interview-on-the-ether-review-podcast",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2016/10/19/interview-on-the-ether-review-podcast/",
+        "timestamp": "20170529014619"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-milestone-v1-0-release",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2016/11/04/web3j-milestone-v1-0-release/",
+        "timestamp": "20170523054337"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-command-line-tools",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2016/11/11/web3j-command-line-tools/",
+        "timestamp": "20161213072443"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-android-port-now-available",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2016/11/14/web3j-android-port-now-available/",
+        "timestamp": "20161117181258"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "java-the-blockchain-talk",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2016/11/23/java-the-blockchain-talk/",
+        "timestamp": "20161213211215"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "manage-ether-hardware-wallets-from-the-command-line-with-web3j-infura",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2016/11/29/manage-ether-hardware-wallets-from-the-command-line-with-web3j-infura/",
+        "timestamp": "20161214224448"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "blockchain-cto-summit-talk",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2016/12/12/blockchain-cto-summit-talk/",
+        "timestamp": "20161221161800"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-now-available-on-homebrew",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2017/01/31/web3j-now-available-on-homebrew/",
+        "timestamp": "20170203224924"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-java-magazine-article-java-apps-on-ethereum-with-web3j",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2017/02/03/web3j-java-magazine-article-java-apps-on-ethereum-with-web3j/",
+        "timestamp": "20170430034024"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-website-is-live",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2017/02/07/web3j-website-is-live/",
+        "timestamp": "20170207205220"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-2-0-milestone-release",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2017/02/10/web3j-2-0-milestone-release/",
+        "timestamp": "20170210211119"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "spring-boot-and-web3j-easy-microservices-for-the-ethereum-blockchain",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2017/02/20/spring-boot-and-web3j-easy-microservices-for-the-ethereum-blockchain/",
+        "timestamp": "20170222172906"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "web3j-2-0-slides",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2017/02/23/web3j-2-0-slides/",
+        "timestamp": "20170224125143"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "reactive-functional-fun-blockchain-web3j",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2017/03/01/reactive-functional-fun-blockchain-web3j/",
+        "timestamp": "20170301210017"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "building-java-android-apps-blockchain",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com/2017/04/18/building-java-android-apps-blockchain/",
+        "timestamp": "20170423185419"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "querying-blockchain-web3j",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2017/05/16/querying-blockchain-web3j/",
+        "timestamp": "20170524235904"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "enterprise-ethereum-alliance-london-meetup-talks-now-available",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2017/08/01/enterprise-ethereum-alliance-london-meetup-talks-now-available/",
+        "timestamp": "20170805233343"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "just-time-devcon-web3j-3-0",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2017/10/30/just-time-devcon-web3j-3-0/",
+        "timestamp": "20171102042114"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "ens-truffle-support-web3j-3-1-0-release",
+    "candidates": [
+      {
+        "url": "http://conorsvensson.com:80/2017/11/13/ens-truffle-support-web3j-3-1-0-release/",
+        "timestamp": "20171120133400"
+      }
+    ]
+  },
+  {
+    "source": "conorsvensson",
+    "slug": "is-writing-the-next-big-thing-for-nfts",
+    "candidates": [
+      {
+        "url": "https://conorsvensson.com/2021/04/06/Is-Writing-the-Next-Big-Thing-for-NFTs/",
+        "timestamp": "20210420032701"
+      }
+    ]
+  },
+  {
+    "source": "newsletter",
+    "slug": "copypasta-and-web3-1145765",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/copypasta-and-web3-1145765",
+        "timestamp": "20221005184956"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/copypasta-and-web3-1145765",
+    "featuredImage": {
+      "src": "/archive/featured-d2d5fc34d47dbfe8.png",
+      "alt": "Featured image for Copypasta and Web3",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!hIZt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc7f31f5-d82a-486d-bd29-def5b674d53c_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "decentralisation-at-all-costs-1322504",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/decentralisation-at-all-costs-1322504",
+        "timestamp": "20220823130234"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/decentralisation-at-all-costs-1322504",
+    "featuredImage": {
+      "src": "/archive/featured-51816272682f6456.png",
+      "alt": "Featured image for Decentralisation at all costs?",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!p5Gz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F71626413-aed3-47d1-a250-257173a00dd4_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "dfmi-decentralised-financial-market-infrastructure-1436133",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/dfmi-decentralised-financial-market-infrastructure-1436133",
+        "timestamp": "20221108153411"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/dfmi-decentralised-financial-market-infrastructure-1436133",
+    "featuredImage": {
+      "src": "/archive/featured-2c27ab63f2e06476.png",
+      "alt": "Featured image for dFMI - decentralised Financial Market Infrastructure",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!qgiO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F13ab0573-98a9-40bb-b818-715b5cce7ad4_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "dollar-dependence-1448329",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/dollar-dependence-1448329",
+        "timestamp": "20221122195600"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/dollar-dependence-1448329",
+    "featuredImage": {
+      "src": "/archive/featured-8315abb082d67846.png",
+      "alt": "Featured image for Dollar dependence",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!SZWT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2259b741-0208-42ed-bf8b-f83941d941ce_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "economies-of-scale-1220573",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/economies-of-scale-1220573",
+        "timestamp": "20220712140646"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/economies-of-scale-1220573",
+    "featuredImage": {
+      "src": "/archive/featured-0e573fc72fc90c6e.png",
+      "alt": "Featured image for Economies of scale",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!NUWl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc1f8796-e6a3-404d-bc7f-f1de1ed93297_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "enterprise-blockchain-redux-1335927",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/enterprise-blockchain-redux-1335927",
+        "timestamp": "20221005181523"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/enterprise-blockchain-redux-1335927",
+    "featuredImage": {
+      "src": "/archive/featured-d1b3deda7551ceed.png",
+      "alt": "Featured image for Enterprise Blockchain Redux",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!YYCM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7b98d089-3e18-4d6a-9ec1-e87f9af68ea5_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "ftx-1460761",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/ftx-1460761",
+        "timestamp": "20221115143845"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/ftx-1460761",
+    "featuredImage": {
+      "src": "/archive/featured-c846bf82d1e7540c.png",
+      "alt": "Featured image for FTX",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!5vAO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd0b8abd3-abc3-4b86-b79d-3b3b4a40d8f4_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "looking-beyond-tokens-verified-credentials-1165784",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/looking-beyond-tokens-verified-credentials-1165784",
+        "timestamp": "20221005182857"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/looking-beyond-tokens-verified-credentials-1165784",
+    "featuredImage": {
+      "src": "/archive/featured-6e5195b7f52cdb35.png",
+      "alt": "Featured image for Looking beyond tokens — verified credentials",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!OSBa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F449b4ec8-0fe3-4eed-a026-b4f34d80b9df_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "network-states-1345563",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/network-states-1345563",
+        "timestamp": "20220913131330"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/network-states-1345563",
+    "featuredImage": {
+      "src": "/archive/featured-c9bff31a200fda5f.png",
+      "alt": "Featured image for Network states",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!e_w2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F76fc4de5-f130-4205-9f1c-eae13117627c_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "non-sovereign-currencies-1359545",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/non-sovereign-currencies-1359545",
+        "timestamp": "20221011130618"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/non-sovereign-currencies-1359545",
+    "featuredImage": {
+      "src": "/archive/featured-818502ce8897c671.png",
+      "alt": "Featured image for Non-sovereign currencies",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!rF8v!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7716a324-d36d-4eaa-b65f-31ed8288015b_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "off-chain-finance-1233964",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/off-chain-finance-1233964",
+        "timestamp": "20221005183419"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/off-chain-finance-1233964",
+    "featuredImage": {
+      "src": "/archive/featured-77a4366ec2fa1271.png",
+      "alt": "Featured image for Off-chain finance",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!CP4E!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F9954e384-660a-41a0-9d3e-6bd49fbe7be4_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "on-chain-finance-1254716",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/on-chain-finance-1254716",
+        "timestamp": "20220804071619"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/on-chain-finance-1254716",
+    "featuredImage": {
+      "src": "/archive/featured-83a81a855a1e672b.png",
+      "alt": "Featured image for On-chain finance",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!yXfW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F9f33ab07-12dc-40b0-ba73-e3c3a04a4c60_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "peer-to-peer-finance-1172905",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/peer-to-peer-finance-1172905",
+        "timestamp": "20221005183633"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/peer-to-peer-finance-1172905",
+    "featuredImage": {
+      "src": "/archive/featured-c22656a37cf5a9d2.png",
+      "alt": "Featured image for Peer to peer finance",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!UO3M!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3e8060d8-dafc-4e60-93d0-f9b93fd3ad02_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "protocols-as-a-service-1371483",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/protocols-as-a-service-1371483",
+        "timestamp": "20220927135834"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/protocols-as-a-service-1371483",
+    "featuredImage": {
+      "src": "/archive/featured-55a4a2bfe7502441.png",
+      "alt": "Featured image for Protocols as a service",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!S5s_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc2ac127b-c61d-405d-b23a-a24bbec08947_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "retail-cbdcs-1424937",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/retail-cbdcs-1424937",
+        "timestamp": "20221101153806"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/retail-cbdcs-1424937",
+    "featuredImage": {
+      "src": "/archive/featured-a6a8c11249dde0d0.png",
+      "alt": "Featured image for Retail CBDCs",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!HqvR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fafc5c3a4-2f2c-435b-8f2a-e3dad0d4166c_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "talent-wars-1244892",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/talent-wars-1244892",
+        "timestamp": "20220726131059"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/talent-wars-1244892",
+    "featuredImage": {
+      "src": "/archive/featured-f7ec0dc8eaa844e9.png",
+      "alt": "Featured image for Talent wars",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!Sv1y!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff1283c82-8744-4b27-ad7f-c0ddee3773d5_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "taxing-times-1314028",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/taxing-times-1314028",
+        "timestamp": "20220920135925"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/taxing-times-1314028",
+    "featuredImage": {
+      "src": "/archive/featured-cc95c246042ea23b.png",
+      "alt": "Featured image for Taxing times",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!Kwxv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6e02b231-bec9-4750-a6db-a766012ee996_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "the-fight-for-privacy-1313206",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/the-fight-for-privacy-1313206",
+        "timestamp": "20220816131754"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/the-fight-for-privacy-1313206",
+    "featuredImage": {
+      "src": "/archive/featured-46a354dfcbb07786.png",
+      "alt": "Featured image for The fight for privacy",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!vgVO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5671f53a-9318-45ab-a25a-4cfea7853960_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "the-future-1473407",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/the-future-1473407",
+        "timestamp": "20221209071907"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/the-future-1473407",
+    "featuredImage": {
+      "src": "/archive/featured-86e652d457226f9e.jpg",
+      "alt": "Featured image for The future",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!TVw0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F105007c6-e0d0-4bd9-ac91-9bc5cd645c32_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "the-leading-web3-platform-1097376",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/the-leading-web3-platform-1097376",
+        "timestamp": "20221209221104"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/the-leading-web3-platform-1097376",
+    "featuredImage": {
+      "src": "/archive/featured-bf618150acbd57ac.png",
+      "alt": "Featured image for The leading Web3 platform",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!KR3l!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8557333a-f639-4b05-b025-c305a3b73de5_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "the-merge-1313482",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/the-merge-1313482",
+        "timestamp": "20220830152426"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/the-merge-1313482",
+    "featuredImage": {
+      "src": "/archive/featured-a036fac4b18a8bf1.png",
+      "alt": "Featured image for The Merge",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!QmGK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7fb22c52-8490-4706-bc62-4693338062fd_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "the-real-dao-opportunity-1089966",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/the-real-dao-opportunity-1089966",
+        "timestamp": "20221005175112"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/the-real-dao-opportunity-1089966",
+    "featuredImage": {
+      "src": "/archive/featured-2af34bbba28a0bc5.png",
+      "alt": "Featured image for The real DAO opportunity",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!WFwl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F09a8e477-a5ef-4979-a917-adce207b6e73_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "the-thriving-communities-of-web2-1154022",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/the-thriving-communities-of-web2-1154022",
+        "timestamp": "20221005191556"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/the-thriving-communities-of-web2-1154022",
+    "featuredImage": {
+      "src": "/archive/featured-9395bd8911c8f77d.png",
+      "alt": "Featured image for The thriving communities of Web2",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!FX72!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8d8c0c74-3b0d-4c0d-b35a-b3c49e3e1403_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "the-web3-stack-1029324",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/the-web3-stack-1029324",
+        "timestamp": "20220928140949"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/the-web3-stack-1029324",
+    "featuredImage": {
+      "src": "/archive/featured-05c3ae172a411486.png",
+      "alt": "Featured image for The Web3 stack",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!GbFx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F65d9db54-e4fa-47d2-ade7-6aece5f022c6_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "trust-anchors-1481923",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/trust-anchors-1481923",
+        "timestamp": "20221207071454"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/trust-anchors-1481923",
+    "featuredImage": {
+      "src": "/archive/featured-67a0c0f64cca5844.png",
+      "alt": "Featured image for Trust anchors",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!UAm4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3020422b-aad2-4672-bc93-62aafebd4e19_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "ultrasound-money-1109152",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/ultrasound-money-1109152",
+        "timestamp": "20220824135638"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/ultrasound-money-1109152",
+    "featuredImage": {
+      "src": "/archive/featured-caf0eb153174bcf9.png",
+      "alt": "Featured image for Ultrasound money",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!BmOI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8e245b10-f6a9-48f9-b366-10ba2a021f0f_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "unstable-coins-1183133",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/unstable-coins-1183133",
+        "timestamp": "20221005184903"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/unstable-coins-1183133",
+    "featuredImage": {
+      "src": "/archive/featured-ae1ff9386b3ba4fa.png",
+      "alt": "Featured image for Unstable coins",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!Sn5t!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F108f8c36-767c-4d3c-baf1-d60e0df04026_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "web3-domains-1273187",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/web3-domains-1273187",
+        "timestamp": "20221018124838"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/web3-domains-1273187",
+    "featuredImage": {
+      "src": "/archive/featured-242311632b2d2616.jpg",
+      "alt": "Featured image for Web3 domains",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!dSYG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F69454651-52a1-437a-a85b-97e3109d7adc_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "web3-is-tokenisation-of-everything-995331",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/web3-is-tokenisation-of-everything-995331",
+        "timestamp": "20221006230017"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/web3-is-tokenisation-of-everything-995331",
+    "featuredImage": {
+      "src": "/archive/featured-52c8cb7400063078.png",
+      "alt": "Featured image for Web3 is tokenisation of everything",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!DuPz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa927e4ae-cecd-42bc-bcad-0b4f0238ca2e_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "web3-s-aol-moment-1220605",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/web3-s-aol-moment-1220605",
+        "timestamp": "20220719124130"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/web3-s-aol-moment-1220605",
+    "featuredImage": {
+      "src": "/archive/featured-1539078d23040611.png",
+      "alt": "Featured image for Web3's AOL moment",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!8IBB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F14021a9f-2b4f-400f-aebb-bc8982d98627_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "web3-sceptics-1263553",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/web3-sceptics-1263553",
+        "timestamp": "20221005183939"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/web3-sceptics-1263553",
+    "featuredImage": {
+      "src": "/archive/featured-76c6f368fc99278b.png",
+      "alt": "Featured image for Web3 sceptics",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!nocJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4747ed8b-ff96-434a-9de7-f1b41519d2a0_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "web3-ux-1201876",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/web3-ux-1201876",
+        "timestamp": "20220716001308"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/web3-ux-1201876",
+    "featuredImage": {
+      "src": "/archive/featured-727c3df85084aea5.png",
+      "alt": "Featured image for Web3 UX",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!elXH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8b3df965-5bcd-4378-b72a-153f6c06258f_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "web5-seriously-1221557",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/web5-seriously-1221557",
+        "timestamp": "20221005180233"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/web5-seriously-1221557",
+    "featuredImage": {
+      "src": "/archive/featured-7bf810ce30ef5d13.png",
+      "alt": "Featured image for Web5, seriously?",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!hLUi!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdaea9b9d-0084-4e42-8a6f-1800ec55b55e_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "wholesale-cbdcs-1424868",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/wholesale-cbdcs-1424868",
+        "timestamp": "20221025125539"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/wholesale-cbdcs-1424868",
+    "featuredImage": {
+      "src": "/archive/featured-56930268c38bbdce.png",
+      "alt": "Featured image for Wholesale CBDCs",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!4z5k!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F94f84274-88d2-44e9-aecc-51b9c9ecd020_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "wholesale-defi-1380875",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/wholesale-defi-1380875",
+        "timestamp": "20221004162647"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/wholesale-defi-1380875",
+    "featuredImage": {
+      "src": "/archive/featured-a73cc6ab3c6ddbf8.png",
+      "alt": "Featured image for Wholesale DeFi",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!udFW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff7363644-e7cb-4349-a7e1-01020ef19aed_1200x628.png"
+    }
+  },
+  {
+    "source": "newsletter",
+    "slug": "your-keys-your-problem-1193171",
+    "candidates": [
+      {
+        "url": "https://writing.conorsvensson.com/issues/your-keys-your-problem-1193171",
+        "timestamp": "20221005183559"
+      }
+    ],
+    "originalUrl": "https://web3perspectives.com/p/your-keys-your-problem-1193171",
+    "featuredImage": {
+      "src": "/archive/featured-29c32a0d2810a6f2.png",
+      "alt": "Featured image for Your keys, your problem",
+      "width": 1200,
+      "height": 628,
+      "sourceUrl": "https://substackcdn.com/image/fetch/$s_!mB6X!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe53ccfbe-2bd1-4d8c-ba16-ab05fbbe5cc8_1200x628.png"
+    }
+  }
+]

@@ -1,0 +1,138 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { archiveSources } from '../../data/archive';
+import { archiveText } from '../../utils/archive.mjs';
+
+const posts = (await getCollection('archive')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const years = [...new Set(posts.map((post) => post.data.date.getUTCFullYear()))];
+const sources = Object.entries(archiveSources).map(([id, source]) => ({
+  id, ...source, count: posts.filter((post) => post.data.source === id).length,
+})).filter((source) => source.count > 0);
+---
+<BaseLayout title="Archive" description="Historical writing by Conor Svensson, collected from personal blogs and newsletters.">
+  <h1>Archive</h1>
+  <p class="archive-intro">My writing has had a few different homes over the years. This brings those older posts together, from early experiments with Linux to quantitative finance, Ethereum and Web3.</p>
+  <p class="archive-summary">{posts.length} posts · {years.at(-1)}–{years[0]} · <a href="/writing/">Read my latest writing →</a></p>
+
+  <form class="archive-filters" id="archive-filters" role="search" hidden>
+    <label class="archive-search">Search the archive
+      <input type="search" name="q" id="archive-query" placeholder="Search titles and full text…" autocomplete="off" />
+    </label>
+    <div class="archive-selects">
+      <label>Original home
+        <select name="source" id="archive-source">
+          <option value="">All publications</option>
+          {sources.map((source) => <option value={source.id}>{source.name} ({source.count})</option>)}
+        </select>
+      </label>
+      <label>Year
+        <select name="year" id="archive-year">
+          <option value="">All years</option>
+          {years.map((year) => <option value={year}>{year}</option>)}
+        </select>
+      </label>
+      <button type="reset">Clear filters</button>
+    </div>
+    <p id="archive-count" role="status" aria-live="polite">Showing all {posts.length} posts</p>
+  </form>
+
+  <div id="archive-results">
+    {years.map((year) => (
+      <section class="archive-year" data-year-group={year} aria-labelledby={`year-${year}`}>
+        <h2 id={`year-${year}`}>{year}</h2>
+        <ul class="post-list">
+          {posts.filter((post) => post.data.date.getUTCFullYear() === year).map((post) => (
+            <li data-post data-source={post.data.source} data-year={year} data-search={`${post.data.title} ${archiveText(post.data.html)}`.toLocaleLowerCase('en')}>
+              <h3><a href={`/archive/${post.id}/`}>{post.data.title}</a></h3>
+              <div class="archive-meta"><FormattedDate date={post.data.date} /><span aria-hidden="true">·</span><span>{archiveSources[post.data.source].name}</span></div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+    <p id="archive-empty" hidden>No posts match these filters. Try a different search or clear the filters.</p>
+  </div>
+
+  <details class="archive-notes">
+    <summary>About this archive</summary>
+    <p>These posts were recovered from copies saved by the <a href="https://web.archive.org/">Internet Archive</a>. Publication dates and wording are preserved; formatting has been adapted for this site. Posts that moved between blogs appear once. The Conor on Web3 newsletter is listed under its current home, <a href="https://web3perspectives.com/">Web3 Perspectives</a>, which also supplies its featured images.</p>
+    <p>Saved copies don’t cover every year. Some images, downloads and embedded media may be unavailable. Each post links to its saved original.</p>
+  </details>
+</BaseLayout>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('#archive-filters')!;
+  const query = document.querySelector<HTMLInputElement>('#archive-query')!;
+  const source = document.querySelector<HTMLSelectElement>('#archive-source')!;
+  const year = document.querySelector<HTMLSelectElement>('#archive-year')!;
+  const posts = [...document.querySelectorAll<HTMLElement>('[data-post]')];
+  const groups = [...document.querySelectorAll<HTMLElement>('[data-year-group]')];
+  const count = document.querySelector<HTMLElement>('#archive-count')!;
+  const empty = document.querySelector<HTMLElement>('#archive-empty')!;
+
+  function applyFilters(updateUrl = true) {
+    const words = query.value.toLocaleLowerCase('en').trim().split(/\s+/).filter(Boolean);
+    let visible = 0;
+    for (const post of posts) {
+      post.hidden = !((!source.value || post.dataset.source === source.value)
+        && (!year.value || post.dataset.year === year.value)
+        && words.every((word) => post.dataset.search!.includes(word)));
+      if (!post.hidden) visible++;
+    }
+    for (const group of groups) group.hidden = !group.querySelector('[data-post]:not([hidden])');
+    count.textContent = visible === posts.length ? `Showing all ${posts.length} posts` : `${visible} of ${posts.length} posts`;
+    empty.hidden = visible > 0;
+    if (updateUrl) {
+      const url = new URL(location.href);
+      for (const [key, value] of [['q', query.value.trim()], ['source', source.value], ['year', year.value]]) {
+        if (value) url.searchParams.set(key, value);
+        else url.searchParams.delete(key);
+      }
+      history.replaceState(null, '', url);
+    }
+  }
+  function readUrl() {
+    const params = new URLSearchParams(location.search);
+    query.value = params.get('q') ?? '';
+    source.value = params.get('source') ?? '';
+    year.value = params.get('year') ?? '';
+    if (source.selectedIndex < 0) source.value = '';
+    if (year.selectedIndex < 0) year.value = '';
+    applyFilters(false);
+  }
+  form.hidden = false;
+  form.addEventListener('submit', (event) => { event.preventDefault(); applyFilters(); });
+  form.addEventListener('input', () => applyFilters());
+  form.addEventListener('reset', () => {
+    query.value = ''; source.value = ''; year.value = ''; applyFilters();
+  });
+  window.addEventListener('popstate', readUrl);
+  readUrl();
+</script>
+
+<style>
+  .archive-intro { max-width: 62ch; }
+  .archive-summary, .archive-meta { color: var(--fg-muted); font-size: 0.85rem; }
+  .archive-filters { margin: 2.25rem 0; padding: 1.25rem; background: var(--bg-muted); border: 1px solid var(--border); border-radius: var(--radius); }
+  label { display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.85rem; }
+  input, select, button { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.55rem 0.65rem; }
+  input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  input { width: 100%; font-size: 1rem; }
+  .archive-selects { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.6fr) auto; align-items: end; gap: 0.75rem; margin-top: 1rem; }
+  select { width: 100%; }
+  button { cursor: pointer; font-size: 0.85rem; }
+  button:hover { border-color: var(--fg-muted); }
+  #archive-count { color: var(--fg-muted); font-size: 0.8rem; margin: 1rem 0 0; }
+  .archive-year { margin: 2.5rem 0; }
+  .archive-year h2 { font-size: 1rem; color: var(--fg-muted); border-bottom: 1px solid var(--border); padding-bottom: 0.6rem; margin: 0; }
+  .archive-meta { display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
+  .archive-notes { margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 1.25rem; color: var(--fg-muted); font-size: 0.9rem; }
+  summary { cursor: pointer; }
+  [hidden] { display: none !important; }
+  @media (max-width: 34rem) {
+    .archive-selects { grid-template-columns: minmax(0, 1fr) minmax(0, 0.6fr); }
+    button { grid-column: 1 / -1; }
+  }
+</style>

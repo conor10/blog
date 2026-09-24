@@ -17,6 +17,7 @@ const tags = [...tagCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 ---
 <BaseLayout title="Writing" description="Essays and notes from Conor Svensson.">
   <h1>Writing</h1>
+  <p>For posts from my earlier blogs and newsletter, browse the <a href="/archive/">archive</a>.</p>
 
   {tags.length > 0 && (
     <div class="tag-filter" id="tag-filter" role="toolbar" aria-label="Filter by tag">

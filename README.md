@@ -52,6 +52,14 @@ draft: false               # optional, defaults to false
 
 Both regenerate on every build.
 
+## Historical archive
+
+`/archive/` contains recovered posts from earlier blogs and the Conor on Web3
+newsletter, with full-text search and publication/year filters. Content and
+recovered images are stored locally; historical posts do not enter the current
+RSS feed. See [archive recovery and maintenance](docs/archive.md) for coverage,
+source records and import instructions.
+
 ## Deploying
 
 Pushes to `main` auto-deploy to GitHub Pages via `.github/workflows/deploy.yml`. No manual step needed.

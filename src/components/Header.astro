@@ -11,6 +11,7 @@ const isActive = (prefix: string) =>
     <a href="/writing/" class:list={[{ active: isActive('/writing') }]} aria-current={isActive('/writing') ? 'page' : undefined}>Writing</a>
     <a href="/reading/" class:list={[{ active: isActive('/reading') }]} aria-current={isActive('/reading') ? 'page' : undefined}>Reading</a>
     <a href="/about/" class:list={[{ active: isActive('/about') }]} aria-current={isActive('/about') ? 'page' : undefined}>About</a>
+    <a href="/archive/" class:list={[{ active: isActive('/archive') }]} aria-current={isActive('/archive') ? 'page' : undefined}>Archive</a>
     <a href="/advisory/" class:list={[{ active: isActive('/advisory') }]} aria-current={isActive('/advisory') ? 'page' : undefined}>Advisory</a>
   </nav>
   <ThemeToggle />
@@ -29,7 +30,7 @@ const isActive = (prefix: string) =>
     white-space: nowrap;
   }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 46rem) {
     .site-header {
       grid-template-columns: minmax(0, 1fr) auto;
       row-gap: 0.85rem;

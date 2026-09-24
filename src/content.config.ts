@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 
 const writing = defineCollection({
   loader: glob({
@@ -34,4 +34,23 @@ const writing = defineCollection({
   }),
 });
 
-export const collections = { writing };
+const archive = defineCollection({
+  loader: file('./src/content/archive/posts.json'),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    description: z.string(),
+    source: z.enum(['blogspot', 'quanttech', 'conorsvensson', 'newsletter']),
+    originalUrl: z.string().url(),
+    snapshotUrl: z.string().url(),
+    featuredImage: z.object({
+      src: z.string(),
+      alt: z.string(),
+      width: z.number().int().positive(),
+      height: z.number().int().positive(),
+    }).optional(),
+    html: z.string(),
+  }),
+});
+
+export const collections = { writing, archive };
