@@ -1,0 +1,45 @@
+---
+import BookLink from './BookLink.astro';
+import goodreads from '../data/goodreads.json';
+import additions from '../data/reading-additions.json';
+
+// These books already appear in the curated 2026 list above.
+const alreadyListed = new Set(['202951438', '228303045']);
+// Cookbooks are excluded from the public reading list.
+const excluded = new Set(['13096678']); // Hawksmoor at Home
+// Re-reads confirmed by the author: The Hobbit and The Lord of the Rings.
+const rereads = new Set(['5907', '3263607', '222910', '838729']);
+// A reading event is identified by book and year, allowing later re-reads.
+const corrected = new Set(additions.map((book) => `${book.id}:${book.year}`));
+const imported = goodreads
+  .filter((book) => !alreadyListed.has(book.id) && !excluded.has(book.id) && !corrected.has(`${book.id}:${book.year}`))
+  .map((book) => ({ ...book, reread: rereads.has(book.id) }));
+const books = [...additions, ...imported];
+const undated = books.filter((book) => book.readAt === null);
+const years = [...new Set(books.map((book) => book.year).filter((year) => year !== null))].sort((a, b) => b - a);
+const groups = years.map((year) => ({
+  year,
+  // ISO completion dates sort chronologically; equal/unknown dates keep source order.
+  books: books.filter((book) => book.year === year)
+    .sort((a, b) => (b.readAt ?? '').localeCompare(a.readAt ?? '')),
+}));
+---
+
+{groups.map((group) => <section class="reading-year">
+  <h2 id={`read-in-${group.year}`}>Read in {group.year}</h2>
+  <ul>{group.books.map((book) => <li>
+    <BookLink href={`https://www.goodreads.com/book/show/${book.id}`}>{book.title}</BookLink> — {book.author}{book.reread && ' (re-read)'}
+  </li>)}</ul>
+</section>)}
+
+<section class="undated-reading">
+  <h2 id="read-date-not-recorded">Read — date not recorded</h2>
+  <p>These books are also on my <BookLink href="https://www.goodreads.com/review/list/43402717-conor-svensson?shelf=read&sort=date_read">Goodreads read shelf</BookLink>, without recorded completion dates.</p>
+  <ul>{undated.map((book) => <li>
+    <BookLink href={`https://www.goodreads.com/book/show/${book.id}`}>{book.title}</BookLink> — {book.author}{book.reread && ' (re-read)'}
+  </li>)}</ul>
+</section>
+
+<style>
+  li { overflow-wrap: anywhere; }
+</style>

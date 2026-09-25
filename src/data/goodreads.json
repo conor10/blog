@@ -1,0 +1,1842 @@
+[
+  {
+    "id": "202951438",
+    "title": "Supremacy: AI, ChatGPT and the Race That Will Change the World",
+    "author": "Parmy Olson",
+    "year": 2026,
+    "readAt": "2026-04-21",
+    "addedYear": 2026
+  },
+  {
+    "id": "228303045",
+    "title": "Breakneck: China's Quest to Engineer the Future",
+    "author": "Dan Wang",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2026
+  },
+  {
+    "id": "19395347",
+    "title": "The New New Thing: The Gripping Inside Story of Silicon Valley - from the no 1 bestselling author of The Big Short",
+    "author": "Michael Lewis",
+    "year": 2025,
+    "readAt": "2025-11-29",
+    "addedYear": 2019
+  },
+  {
+    "id": "222885438",
+    "title": "Warrior Mindset: The Tao of a Champion",
+    "author": "Roger Gracie",
+    "year": 2025,
+    "readAt": "2025-10-02",
+    "addedYear": 2025
+  },
+  {
+    "id": "19306508",
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "year": 2025,
+    "readAt": "2025-09-02",
+    "addedYear": 2021
+  },
+  {
+    "id": "214100921",
+    "title": "Source Code: My Beginnings",
+    "author": "Bill Gates",
+    "year": 2025,
+    "readAt": "2025-05-05",
+    "addedYear": 2025
+  },
+  {
+    "id": "57933306",
+    "title": "Stolen Focus: Why You Can't Pay Attention— and How to Think Deeply Again",
+    "author": "Johann Hari",
+    "year": 2025,
+    "readAt": "2025-02-18",
+    "addedYear": 2023
+  },
+  {
+    "id": "51181015",
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "year": 2025,
+    "readAt": "2025-02-03",
+    "addedYear": 2025
+  },
+  {
+    "id": "22138508",
+    "title": "Dual Momentum Investing: An Innovative Strategy for Higher Returns with Lower Risk",
+    "author": "Gary Antonacci",
+    "year": 2017,
+    "readAt": "2017-02-24",
+    "addedYear": 2024
+  },
+  {
+    "id": "7347",
+    "title": "The Book of Lost Tales 1 (The History of Middle-Earth, #1)",
+    "author": "J.R.R. Tolkien",
+    "year": 2024,
+    "readAt": "2024-04-05",
+    "addedYear": 2024
+  },
+  {
+    "id": "178628338",
+    "title": "Read Write Own: Building the Next Era of the Internet",
+    "author": "Chris Dixon",
+    "year": 2024,
+    "readAt": "2024-02-13",
+    "addedYear": 2024
+  },
+  {
+    "id": "11186743",
+    "title": "Unfinished Tales of Númenor and Middle-Earth",
+    "author": "J.R.R. Tolkien",
+    "year": 2024,
+    "readAt": "2024-02-11",
+    "addedYear": 2024
+  },
+  {
+    "id": "53654093",
+    "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+    "author": "Douglas Adams",
+    "year": 2024,
+    "readAt": "2024-01-10",
+    "addedYear": 2023
+  },
+  {
+    "id": "61327729",
+    "title": "Virtual You: How Building Your Digital Twin Will Revolutionize Medicine and Change Your Life",
+    "author": "Peter Coveney",
+    "year": 2023,
+    "readAt": "2023-12-07",
+    "addedYear": 2023
+  },
+  {
+    "id": "29579",
+    "title": "Foundation (Foundation, #1)",
+    "author": "Isaac Asimov",
+    "year": 2023,
+    "readAt": "2023-11-02",
+    "addedYear": 2020
+  },
+  {
+    "id": "196239284",
+    "title": "$100M Leads: How to Get Strangers To Want To Buy Your Stuff (Acquisition.com $100M Series)",
+    "author": "Alex Hormozi",
+    "year": 2023,
+    "readAt": "2023-10-21",
+    "addedYear": 2023
+  },
+  {
+    "id": "122765395",
+    "title": "Elon Musk",
+    "author": "Walter Isaacson",
+    "year": 2023,
+    "readAt": "2023-10-01",
+    "addedYear": 2023
+  },
+  {
+    "id": "59696349",
+    "title": "Build: An Unorthodox Guide to Making Things Worth Making",
+    "author": "Tony Fadell",
+    "year": 2023,
+    "readAt": "2023-10-20",
+    "addedYear": 2023
+  },
+  {
+    "id": "129874948",
+    "title": "Be Useful: Seven tools for life",
+    "author": "Arnold Schwarzenegger",
+    "year": 2023,
+    "readAt": "2023-10-14",
+    "addedYear": 2023
+  },
+  {
+    "id": "152015003",
+    "title": "Going Infinite: The Rise and Fall of a New Tycoon",
+    "author": "Michael Lewis",
+    "year": 2023,
+    "readAt": "2023-10-07",
+    "addedYear": 2023
+  },
+  {
+    "id": "156784",
+    "title": "Permutation City",
+    "author": "Greg Egan",
+    "year": 2023,
+    "readAt": "2023-09-15",
+    "addedYear": 2023
+  },
+  {
+    "id": "10483171",
+    "title": "The Beginning of Infinity: Explanations That Transform the World",
+    "author": "David Deutsch",
+    "year": 2023,
+    "readAt": "2023-09-08",
+    "addedYear": 2023
+  },
+  {
+    "id": "58612786",
+    "title": "$100M Offers: How To Make Offers So Good People Feel Stupid Saying No",
+    "author": "Alex Hormozi",
+    "year": 2023,
+    "readAt": "2023-08-28",
+    "addedYear": 2023
+  },
+  {
+    "id": "42348376",
+    "title": "Secrets of Sand Hill Road: Venture Capital and How to Get It",
+    "author": "Scott Kupor",
+    "year": 2023,
+    "readAt": "2023-05-20",
+    "addedYear": 2023
+  },
+  {
+    "id": "164160",
+    "title": "Philosophy and the Real World: An Introduction to Karl Popper",
+    "author": "Brian Magee",
+    "year": 2023,
+    "readAt": "2023-05-14",
+    "addedYear": 2023
+  },
+  {
+    "id": "61535",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "year": 2023,
+    "readAt": "2023-05-11",
+    "addedYear": 2019
+  },
+  {
+    "id": "30165203",
+    "title": "American Gods (American Gods, #1)",
+    "author": "Neil Gaiman",
+    "year": 2023,
+    "readAt": "2023-04-27",
+    "addedYear": 2023
+  },
+  {
+    "id": "44492286",
+    "title": "Children of Dune (Dune, #3)",
+    "author": "Frank Herbert",
+    "year": 2023,
+    "readAt": "2023-03-26",
+    "addedYear": 2023
+  },
+  {
+    "id": "3375878",
+    "title": "The Absolute Sandman, Volume 4",
+    "author": "Neil Gaiman",
+    "year": 2023,
+    "readAt": "2023-02-09",
+    "addedYear": 2023
+  },
+  {
+    "id": "567610",
+    "title": "How to Read a Book: The Classic Guide to Intelligent Reading",
+    "author": "Mortimer J. Adler",
+    "year": 2023,
+    "readAt": "2023-01-21",
+    "addedYear": 2023
+  },
+  {
+    "id": "102920",
+    "title": "Understanding Comics: The Invisible Art",
+    "author": "Scott McCloud",
+    "year": 2023,
+    "readAt": "2023-01-02",
+    "addedYear": 2023
+  },
+  {
+    "id": "25451264",
+    "title": "Death's End (Remembrance of Earth’s Past, #3)",
+    "author": "Liu Cixin",
+    "year": 2022,
+    "readAt": "2022-12-28",
+    "addedYear": 2022
+  },
+  {
+    "id": "53163078",
+    "title": "Currency Cold War: Cash and Cryptography, Hash Rates and Hegemony (Perspectives)",
+    "author": "David Birch",
+    "year": 2022,
+    "readAt": "2022-11-01",
+    "addedYear": 2022
+  },
+  {
+    "id": "2186848",
+    "title": "The Absolute Sandman, Volume 3",
+    "author": "Neil Gaiman",
+    "year": 2022,
+    "readAt": "2022-12-12",
+    "addedYear": 2022
+  },
+  {
+    "id": "6088007",
+    "title": "Neuromancer (Sprawl, #1)",
+    "author": "William Gibson",
+    "year": 2022,
+    "readAt": "2022-11-29",
+    "addedYear": 2022
+  },
+  {
+    "id": "23012576",
+    "title": "Absolute Transmetropolitan Vol. 1",
+    "author": "Warren Ellis",
+    "year": 2022,
+    "readAt": "2022-11-19",
+    "addedYear": 2022
+  },
+  {
+    "id": "1025685",
+    "title": "The Absolute Sandman, Volume 2",
+    "author": "Neil Gaiman",
+    "year": 2022,
+    "readAt": "2022-11-02",
+    "addedYear": 2022
+  },
+  {
+    "id": "36402034",
+    "title": "Do Androids Dream of Electric Sheep?",
+    "author": "Philip K. Dick",
+    "year": 2022,
+    "readAt": "2022-10-26",
+    "addedYear": 2020
+  },
+  {
+    "id": "62228436",
+    "title": "The Billionaire’s Folly: The Untold Story of Ethereum and the Unicorn That Wasn’t",
+    "author": "Faisal Khan",
+    "year": 2022,
+    "readAt": "2022-10-18",
+    "addedYear": 2022
+  },
+  {
+    "id": "14772",
+    "title": "William Gibson's Neuromancer: The Graphic Novel",
+    "author": "William Gibson",
+    "year": 2022,
+    "readAt": "2022-10-11",
+    "addedYear": 2022
+  },
+  {
+    "id": "25323576",
+    "title": "Prometheus: The Complete Fire and Stone",
+    "author": "Kelly Sue DeConnick",
+    "year": 2022,
+    "readAt": "2022-09-22",
+    "addedYear": 2022
+  },
+  {
+    "id": "873993",
+    "title": "The Trusted Advisor",
+    "author": "David H. Maister",
+    "year": 2022,
+    "readAt": "2022-09-25",
+    "addedYear": 2022
+  },
+  {
+    "id": "23753",
+    "title": "The Absolute Sandman, Volume 1",
+    "author": "Neil Gaiman",
+    "year": 2022,
+    "readAt": "2022-09-10",
+    "addedYear": 2022
+  },
+  {
+    "id": "59064518",
+    "title": "The Metaverse: And How It Will Revolutionize Everything",
+    "author": "Matthew L. Ball",
+    "year": 2022,
+    "readAt": "2022-08-28",
+    "addedYear": 2022
+  },
+  {
+    "id": "35214497",
+    "title": "24 Assets: Create a digital, scalable, valuable and fun business that will thrive in a fast changing world",
+    "author": "Daniel Priestley",
+    "year": 2022,
+    "readAt": "2022-08-24",
+    "addedYear": 2022
+  },
+  {
+    "id": "37903770",
+    "title": "Norse Mythology",
+    "author": "Neil Gaiman",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2022
+  },
+  {
+    "id": "60643059",
+    "title": "The Network State: How To Start a New Country",
+    "author": "Balaji S. Srinivasan",
+    "year": 2022,
+    "readAt": "2022-08-12",
+    "addedYear": 2022
+  },
+  {
+    "id": "61249151",
+    "title": "Winners Have a Story: How CEOs can turn complex science and technology into irresistible fundraising pitches",
+    "author": "Giuseppe Marzio",
+    "year": 2022,
+    "readAt": "2022-07-27",
+    "addedYear": 2022
+  },
+  {
+    "id": "44492285",
+    "title": "Dune Messiah (Dune #2)",
+    "author": "Frank Herbert",
+    "year": 2022,
+    "readAt": "2022-07-02",
+    "addedYear": 2022
+  },
+  {
+    "id": "30753512",
+    "title": "Generation Decks: The Unofficial History of Gaming Phenomenon Magic The Gathering",
+    "author": "Titus Chalk",
+    "year": 2022,
+    "readAt": "2022-05-23",
+    "addedYear": 2022
+  },
+  {
+    "id": "17245",
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "year": 2022,
+    "readAt": "2022-03-23",
+    "addedYear": 2022
+  },
+  {
+    "id": "55164262",
+    "title": "Go Do Deals: The Entrepreneur’s Guide To Buying & Selling Businesses",
+    "author": "Jeremy Harbour",
+    "year": 2022,
+    "readAt": "2022-03-08",
+    "addedYear": 2022
+  },
+  {
+    "id": "50018663",
+    "title": "Add Then Multiply: How small businesses can think like big businesses and achieve exponential growth",
+    "author": "David B. Horne",
+    "year": 2021,
+    "readAt": "2021-12-20",
+    "addedYear": 2021
+  },
+  {
+    "id": "7332",
+    "title": "The Silmarillion",
+    "author": "J.R.R. Tolkien",
+    "year": 2021,
+    "readAt": "2021-10-28",
+    "addedYear": 2021
+  },
+  {
+    "id": "55360267",
+    "title": "Out of the Ether: The Amazing Story of Ethereum and the $55 Million Heist that Almost Destroyed It All",
+    "author": "Matthew Leising",
+    "year": 2021,
+    "readAt": "2021-09-05",
+    "addedYear": 2021
+  },
+  {
+    "id": "55876485",
+    "title": "Crypto Wars: Faked Deaths, Missing Billions and Industry Disruption",
+    "author": "Erica Stanford",
+    "year": 2021,
+    "readAt": "2021-08-16",
+    "addedYear": 2021
+  },
+  {
+    "id": "36448501",
+    "title": "The Bitcoin Standard: The Decentralized Alternative to Central Banking",
+    "author": "Saifedean Ammous",
+    "year": 2021,
+    "readAt": "2021-08-11",
+    "addedYear": 2021
+  },
+  {
+    "id": "18898986",
+    "title": "The Problem of HFT - Collected Writings on High Frequency Trading & Stock Market Structure Reform",
+    "author": "Haim Bodek",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "35031085",
+    "title": "Frankenstein",
+    "author": "Mary Wollstonecraft Shelley",
+    "year": 2021,
+    "readAt": "2021-07-15",
+    "addedYear": 2021
+  },
+  {
+    "id": "23168817",
+    "title": "The Dark Forest (Remembrance of Earth’s Past, #2)",
+    "author": "Liu Cixin",
+    "year": 2021,
+    "readAt": "2021-07-04",
+    "addedYear": 2020
+  },
+  {
+    "id": "17863",
+    "title": "Accelerando",
+    "author": "Charles Stross",
+    "year": 2021,
+    "readAt": "2021-05-16",
+    "addedYear": 2019
+  },
+  {
+    "id": "56310946",
+    "title": "Bookbuilder: The definitive guide to writing the book to transform your business",
+    "author": "Lucy McCarraher",
+    "year": 2021,
+    "readAt": "2021-03-25",
+    "addedYear": 2021
+  },
+  {
+    "id": "48930275",
+    "title": "How I Built This: The Unexpected Paths to Success from the World’s Most Inspiring Entrepreneurs",
+    "author": "Guy Raz",
+    "year": 2021,
+    "readAt": "2021-03-12",
+    "addedYear": 2021
+  },
+  {
+    "id": "20518872",
+    "title": "The Three-Body Problem (Remembrance of Earth’s Past, #1)",
+    "author": "Liu Cixin",
+    "year": 2021,
+    "readAt": "2021-03-03",
+    "addedYear": 2020
+  },
+  {
+    "id": "10569",
+    "title": "On Writing: A Memoir of the Craft",
+    "author": "Stephen King",
+    "year": 2021,
+    "readAt": "2021-02-13",
+    "addedYear": 2021
+  },
+  {
+    "id": "944652",
+    "title": "Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger",
+    "author": "Charles T. Munger",
+    "year": 2021,
+    "readAt": "2021-01-29",
+    "addedYear": 2019
+  },
+  {
+    "id": "43582376",
+    "title": "The Body: A Guide for Occupants",
+    "author": "Bill Bryson",
+    "year": 2021,
+    "readAt": "2021-01-23",
+    "addedYear": 2021
+  },
+  {
+    "id": "38205246",
+    "title": "Money Moments: Simple steps to financial well-being",
+    "author": "Jason Butler",
+    "year": 2021,
+    "readAt": "2021-01-17",
+    "addedYear": 2021
+  },
+  {
+    "id": "14444050",
+    "title": "101 Simple Ways to be a Better Runner",
+    "author": "Jason Fitzgerald",
+    "year": 2021,
+    "readAt": "2021-01-03",
+    "addedYear": 2021
+  },
+  {
+    "id": "19312733",
+    "title": "The Whole-Brain Child: 12 Proven Strategies to Nurture Your Child's Developing Mind",
+    "author": "Daniel J. Siegel",
+    "year": 2021,
+    "readAt": "2021-01-02",
+    "addedYear": 2020
+  },
+  {
+    "id": "10202763",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "year": 2020,
+    "readAt": "2020-12-31",
+    "addedYear": 2020
+  },
+  {
+    "id": "838729",
+    "title": "The Return of the King (The Lord of the Rings, #3)",
+    "author": "J.R.R. Tolkien",
+    "year": 2020,
+    "readAt": "2020-12-31",
+    "addedYear": 2020
+  },
+  {
+    "id": "44767458",
+    "title": "Dune (Dune, #1)",
+    "author": "Frank Herbert",
+    "year": 2020,
+    "readAt": "2020-12-14",
+    "addedYear": 2020
+  },
+  {
+    "id": "34507927",
+    "title": "How to Take Smart Notes",
+    "author": "Sönke Ahrens",
+    "year": 2020,
+    "readAt": "2020-11-15",
+    "addedYear": 2020
+  },
+  {
+    "id": "31450959",
+    "title": "Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success",
+    "author": "Brad Stulberg",
+    "year": 2020,
+    "readAt": "2020-10-23",
+    "addedYear": 2020
+  },
+  {
+    "id": "222910",
+    "title": "The Two Towers (The Lord of the Rings, #2)",
+    "author": "J.R.R. Tolkien",
+    "year": 2020,
+    "readAt": "2020-10-25",
+    "addedYear": 2020
+  },
+  {
+    "id": "40118959",
+    "title": "Entrepreneur Revolution: How to Develop your Entrepreneurial Mindset and Start a Business that Works",
+    "author": "Daniel Priestley",
+    "year": 2020,
+    "readAt": "2020-10-12",
+    "addedYear": 2020
+  },
+  {
+    "id": "2547",
+    "title": "The Prophet",
+    "author": "Kahlil Gibran",
+    "year": 2020,
+    "readAt": "2020-10-04",
+    "addedYear": 2020
+  },
+  {
+    "id": "19027446",
+    "title": "The Master Switch: The Rise and Fall of Information Empires",
+    "author": "Tim Wu",
+    "year": 2020,
+    "readAt": "2020-09-30",
+    "addedYear": 2020
+  },
+  {
+    "id": "3263607",
+    "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+    "author": "J.R.R. Tolkien",
+    "year": 2020,
+    "readAt": "2020-09-13",
+    "addedYear": 2020
+  },
+  {
+    "id": "49110127",
+    "title": "The Infinite Machine",
+    "author": "Camila Russo",
+    "year": 2020,
+    "readAt": "2020-07-22",
+    "addedYear": 2020
+  },
+  {
+    "id": "17909476",
+    "title": "Musashi: An Epic Novel of the Samurai Era",
+    "author": "Eiji Yoshikawa",
+    "year": 2020,
+    "readAt": "2020-07-11",
+    "addedYear": 2019
+  },
+  {
+    "id": "35525995",
+    "title": "Attack of the 50 Foot Blockchain: Bitcoin, Blockchain, Ethereum & Smart Contracts",
+    "author": "David Gerard",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2020
+  },
+  {
+    "id": "5907",
+    "title": "The Hobbit, or There and Back Again",
+    "author": "J.R.R. Tolkien",
+    "year": 2020,
+    "readAt": "2020-07-04",
+    "addedYear": 2020
+  },
+  {
+    "id": "23353984",
+    "title": "Key Person of Influence (Revised Edition): The Five-Step Method to become one of the most highly valued and highly paid people in your industry",
+    "author": "Daniel Priestley",
+    "year": 2020,
+    "readAt": "2020-06-30",
+    "addedYear": 2020
+  },
+  {
+    "id": "48592299",
+    "title": "Why We Sleep: The New Science of Sleep and Dreams",
+    "author": "Matthew Walker",
+    "year": 2020,
+    "readAt": "2020-06-10",
+    "addedYear": 2019
+  },
+  {
+    "id": "48500580",
+    "title": "Shoe Dog: A Memoir by the Creator of NIKE",
+    "author": "Phil Knight",
+    "year": 2020,
+    "readAt": "2020-05-25",
+    "addedYear": 2019
+  },
+  {
+    "id": "17604923",
+    "title": "To Sell is Human: The Surprising Truth About Persuading, Convincing, and Influencing Others",
+    "author": "Daniel H. Pink",
+    "year": 2020,
+    "readAt": "2020-05-16",
+    "addedYear": 2020
+  },
+  {
+    "id": "42419824",
+    "title": "How to Travel",
+    "author": "The School of Life",
+    "year": 2020,
+    "readAt": "2020-05-04",
+    "addedYear": 2020
+  },
+  {
+    "id": "16045756",
+    "title": "The Startup Owner's Manual Strategy Guide",
+    "author": "Steve Blank",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2020
+  },
+  {
+    "id": "22251998",
+    "title": "Anxiety: Panicking about Panic: A Powerful, Self-Help Guide for Those Suffering From an Anxiety or Panic Disorder",
+    "author": "Joshua Fletcher",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2020
+  },
+  {
+    "id": "19609311",
+    "title": "Surf Nation: In Search of the Fast Lefts and Hollow Rights of Britain and Ireland",
+    "author": "Alex Wade",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2020
+  },
+  {
+    "id": "18938291",
+    "title": "Stumbling on Happiness: An insightful neuroscience self-help psychology book on cognitive enhancement and human behavior",
+    "author": "Daniel Todd Gilbert",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2020
+  },
+  {
+    "id": "42754169",
+    "title": "Reboot: Leadership and the Art of Growing Up",
+    "author": "Jerry Colonna",
+    "year": 2020,
+    "readAt": "2020-02-18",
+    "addedYear": 2020
+  },
+  {
+    "id": "11468377",
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "50907861",
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "year": 2019,
+    "readAt": "2019-10-17",
+    "addedYear": 2019
+  },
+  {
+    "id": "19304385",
+    "title": "The Click Moment: Seizing Opportunity in an Unpredictable World",
+    "author": "Frans Johansson",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "20930934",
+    "title": "Blog to Win Business: How to Enchant Readers and Woo Customers",
+    "author": "Henneke Duistermaat",
+    "year": 2019,
+    "readAt": "2019-10-10",
+    "addedYear": 2019
+  },
+  {
+    "id": "38472012",
+    "title": "Breaking Smart: How Software is Eating the World",
+    "author": "Venkatesh G. Rao",
+    "year": 2019,
+    "readAt": "2019-10-13",
+    "addedYear": 2019
+  },
+  {
+    "id": "38229113",
+    "title": "Mastering The 21 Immutable Principles Of Brazilian Jiu-Jitsu: The Ultimate Handbook for Brazilian Jiu-Jitsu Students",
+    "author": "Paulo Guillobel",
+    "year": 2019,
+    "readAt": "2019-10-01",
+    "addedYear": 2019
+  },
+  {
+    "id": "23155181",
+    "title": "Inbound Marketing, Revised and Updated: Attract, Engage, and Delight Customers Online",
+    "author": "Brian Halligan",
+    "year": 2019,
+    "readAt": "2019-09-30",
+    "addedYear": 2019
+  },
+  {
+    "id": "18857655",
+    "title": "The Way of the Fight",
+    "author": "Georges St-Pierre",
+    "year": 2019,
+    "readAt": "2019-09-09",
+    "addedYear": 2019
+  },
+  {
+    "id": "26222798",
+    "title": "Striking Thoughts: Bruce Lee's Wisdom for Daily Living (Bruce Lee Library)",
+    "author": "Bruce Lee",
+    "year": 2019,
+    "readAt": "2019-07-28",
+    "addedYear": 2018
+  },
+  {
+    "id": "42387729",
+    "title": "Bitcoin Billionaires: A True Story of Genius, Betrayal and Redemption",
+    "author": "Ben Mezrich",
+    "year": 2019,
+    "readAt": "2019-06-26",
+    "addedYear": 2019
+  },
+  {
+    "id": "6565257",
+    "title": "Hackers & Painters: Big Ideas from the Computer Age",
+    "author": "Paul Graham",
+    "year": 2019,
+    "readAt": "2019-06-26",
+    "addedYear": 2015
+  },
+  {
+    "id": "19327665",
+    "title": "Mo' Meta Blues: The World According to Questlove",
+    "author": "Ahmir Thompson",
+    "year": 2019,
+    "readAt": "2019-03-18",
+    "addedYear": 2019
+  },
+  {
+    "id": "61329",
+    "title": "Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers",
+    "author": "Geoffrey A. Moore",
+    "year": 2018,
+    "readAt": "2018-10-01",
+    "addedYear": 2015
+  },
+  {
+    "id": "39334491",
+    "title": "Kettlebell Workouts and Challenges 1 (updated 2022): The best kettlebell workouts for beginners to advanced",
+    "author": "Taco Fleur",
+    "year": 2018,
+    "readAt": "2018-08-05",
+    "addedYear": 2018
+  },
+  {
+    "id": "821987",
+    "title": "Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web",
+    "author": "Tim Berners-Lee",
+    "year": 2019,
+    "readAt": "2019-03-12",
+    "addedYear": 2019
+  },
+  {
+    "id": "11149411",
+    "title": "Oryx and Crake (MaddAddam Trilogy, #1)",
+    "author": "Margaret Atwood",
+    "year": 2019,
+    "readAt": "2019-01-22",
+    "addedYear": 2018
+  },
+  {
+    "id": "324750",
+    "title": "High Output Management",
+    "author": "Andrew S. Grove",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2018
+  },
+  {
+    "id": "1308591",
+    "title": "Dot.con: How America Lost Its Mind and Money in the Internet Era",
+    "author": "John Cassidy",
+    "year": 2019,
+    "readAt": "2019-01-22",
+    "addedYear": 2019
+  },
+  {
+    "id": "22304734",
+    "title": "The Art of Learning: An Inner Journey to Optimal Performance",
+    "author": "Josh Waitzkin",
+    "year": 2018,
+    "readAt": "2018-11-24",
+    "addedYear": 2018
+  },
+  {
+    "id": "36059092",
+    "title": "Financial Management for Technology Start-Ups: A Handbook for Growth",
+    "author": "Alnoor Bhimani",
+    "year": 2018,
+    "readAt": "2018-11-22",
+    "addedYear": 2018
+  },
+  {
+    "id": "25766697",
+    "title": "Buffett: The Biography",
+    "author": "Roger Lowenstein",
+    "year": 2016,
+    "readAt": "2016-02-09",
+    "addedYear": 2016
+  },
+  {
+    "id": "18914433",
+    "title": "Positioning: The Battle for Your Mind",
+    "author": "Al Ries",
+    "year": 2018,
+    "readAt": "2018-11-02",
+    "addedYear": 2018
+  },
+  {
+    "id": "11698456",
+    "title": "Idea Man: A Memoir by the Co-founder of Microsoft",
+    "author": "Paul Allen",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "34401334",
+    "title": "Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers (Strategyzer)",
+    "author": "Alexander Osterwalder",
+    "year": 2018,
+    "readAt": "2018-10-13",
+    "addedYear": 2018
+  },
+  {
+    "id": "11059672",
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 2018,
+    "readAt": "2018-09-10",
+    "addedYear": 2018
+  },
+  {
+    "id": "11517032",
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": 2018,
+    "readAt": "2018-08-08",
+    "addedYear": 2018
+  },
+  {
+    "id": "36645100",
+    "title": "Inspired: How to Create Tech Products Customers Love (Silicon Valley Product Group)",
+    "author": "Marty Cagan",
+    "year": 2018,
+    "readAt": "2018-08-06",
+    "addedYear": 2018
+  },
+  {
+    "id": "14761514",
+    "title": "Cryptonomicon",
+    "author": "Neal Stephenson",
+    "year": 2018,
+    "readAt": "2018-07-26",
+    "addedYear": 2017
+  },
+  {
+    "id": "33121679",
+    "title": "Venture Deals: Be Smarter Than Your Lawyer and Venture Capitalist",
+    "author": "Brad Feld",
+    "year": 2018,
+    "readAt": "2018-07-13",
+    "addedYear": 2018
+  },
+  {
+    "id": "18951931",
+    "title": "Kettlebell Training",
+    "author": "Steve Cotter",
+    "year": 2018,
+    "readAt": "2018-06-15",
+    "addedYear": 2018
+  },
+  {
+    "id": "12996514",
+    "title": "The Better Angels of Our Nature: A History of Violence and Humanity",
+    "author": "Steven Pinker",
+    "year": 2018,
+    "readAt": "2018-05-13",
+    "addedYear": 2017
+  },
+  {
+    "id": "19222174",
+    "title": "Inside the Black Box: A Simple Guide to Quantitative and High-Frequency Trading (Wiley Finance)",
+    "author": "Rishi K. Narang",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "8325802",
+    "title": "Letters from a Stoic",
+    "author": "Seneca",
+    "year": 2015,
+    "readAt": "2015-10-13",
+    "addedYear": 2015
+  },
+  {
+    "id": "9753980",
+    "title": "Don't Just Roll the Dice - a usefully short guide to software pricing",
+    "author": "Neil Davidson",
+    "year": 2017,
+    "readAt": "2017-11-07",
+    "addedYear": 2017
+  },
+  {
+    "id": "18886376",
+    "title": "Traction: Get a Grip on Your Business",
+    "author": "Gino Wickman",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "18995451",
+    "title": "Kettlebell Simple & Sinister",
+    "author": "Pavel Tsatsouline",
+    "year": 2017,
+    "readAt": "2017-09-26",
+    "addedYear": 2017
+  },
+  {
+    "id": "25629221",
+    "title": "Jiu Jitsu: The Black Belt Blueprint: An Intelligent Approach to Brazilian Jiu Jitsu",
+    "author": "Nicolas Gregoriades",
+    "year": 2017,
+    "readAt": "2017-06-13",
+    "addedYear": 2017
+  },
+  {
+    "id": "18982623",
+    "title": "Selling to Big Companies",
+    "author": "Jill Konrath",
+    "year": 2017,
+    "readAt": "2017-06-01",
+    "addedYear": 2017
+  },
+  {
+    "id": "20657434",
+    "title": "The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers—Straight Talk on the Challenges of Entrepreneurship",
+    "author": "Ben Horowitz",
+    "year": 2017,
+    "readAt": "2017-05-03",
+    "addedYear": 2017
+  },
+  {
+    "id": "18883827",
+    "title": "Getting to Yes: Negotiating an agreement without giving in",
+    "author": "Roger Fisher",
+    "year": 2017,
+    "readAt": "2017-03-28",
+    "addedYear": 2017
+  },
+  {
+    "id": "19607446",
+    "title": "Vijnana Yoga Practice Manual",
+    "author": "Orit Sen-Gupta",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "255974",
+    "title": "Big Drop",
+    "author": "John Long",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "8549020",
+    "title": "Coders at Work: Reflections on the Craft of Programming",
+    "author": "Peter Seibel",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "8861728",
+    "title": "The Devil's Teeth: The True Story of Great White Sharks",
+    "author": "Susan Casey",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "12737739",
+    "title": "The Wave: In Pursuit of the Rogues, Freaks, and Giants of the Ocean",
+    "author": "Susan Casey",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "11312943",
+    "title": "Life",
+    "author": "Keith Richards",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "11725101",
+    "title": "How To Be The Luckiest Person Alive!",
+    "author": "James Altucher",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "8275248",
+    "title": "Your Brain at Work: Strategies for Overcoming Distraction, Regaining Focus, and Working Smarter All Day Long",
+    "author": "David Rock",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "10587014",
+    "title": "Kingpin: How One Hacker Took Over the Billion-Dollar Cybercrime Underground",
+    "author": "Kevin Poulsen",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19518472",
+    "title": "Shake the World: It's Not About Finding a Job, It's About Creating a Life",
+    "author": "James Marshall Reilly",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19243107",
+    "title": "Start It Up: Why Running Your Own Business is Easier Than You Think",
+    "author": "Luke Johnson",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "13595718",
+    "title": "The Founder's Dilemmas: Anticipating and Avoiding the Pitfalls That Can Sink a Startup",
+    "author": "Noam Wasserman",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19908571",
+    "title": "Surfari",
+    "author": "Tim Baker",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "6645917",
+    "title": "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent",
+    "author": "Joel Spolsky",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "13096678",
+    "title": "Hawksmoor at Home: Meat - Seafood - Sides - Breakfasts - Puddings - Cocktails",
+    "author": "Huw Gott",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "13042724",
+    "title": "Losing My Virginity: How I've Survived, Had Fun, and Made a Fortune Doing Business My Way",
+    "author": "Richard Branson",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "17188127",
+    "title": "Bradley Wiggins: My Time: An Autobiography",
+    "author": "Bradley Wiggins",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "9167158",
+    "title": "Start Small, Stay Small: A Developer's Guide to Launching a Startup",
+    "author": "Rob Walling",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "16057900",
+    "title": "Total Recall",
+    "author": "Arnold Schwarzenegger",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "12363348",
+    "title": "More Money Than God: Hedge Funds and the Making of a New Elite",
+    "author": "Sebastian Mallaby",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "6621611",
+    "title": "The Intelligent Investor",
+    "author": "Benjamin Graham",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "9615586",
+    "title": "Common Sense on Mutual Funds, Updated 10th Anniversary Edition",
+    "author": "John C. Bogle",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "6707303",
+    "title": "Bailout Nation: How Greed and Easy Money Corrupted Wall Street and Shook the World Economy",
+    "author": "Barry Ritholtz",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19231242",
+    "title": "Smarter Investing: Simpler Decisions for Better Results",
+    "author": "Tim Hale",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "10604611",
+    "title": "A Random Walk Down Wall Street",
+    "author": "Burton G. Malkiel",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "288897",
+    "title": "Where Are the Customers' Yachts?: or A Good Hard Look at Wall Street (Wiley Investment Classics)",
+    "author": "Fred Schwed Jr.",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "9290474",
+    "title": "The Intelligent Asset Allocator: How to Build Your Portfolio to Maximize Returns and Minimize Risk",
+    "author": "William J. Bernstein",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19199548",
+    "title": "The Escape Manifesto: Quit Your Corporate Job. Do Something Different!",
+    "author": "Escape the City",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "11803016",
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19034389",
+    "title": "The New Market Wizards: Conversations with America's Top Traders (Wiley Trading Book 95)",
+    "author": "Jack D. Schwager",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19244133",
+    "title": "Difficult Men: From The Sopranos and The Wire to Mad Men and Breaking Bad",
+    "author": "Brett Martin",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "18896302",
+    "title": "Market Wizards: Interviews with Top Traders",
+    "author": "Jack D. Schwager",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "12974839",
+    "title": "Red-Blooded Risk: The Secret History of Wall Street",
+    "author": "Aaron Brown",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "11507565",
+    "title": "The Black Swan: The Impact of the Highly Improbable",
+    "author": "Nassim Nicholas Taleb",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "20812796",
+    "title": "When Genius Failed: The Rise and Fall of Long Term Capital Management",
+    "author": "Roger Lowenstein",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "21460135",
+    "title": "Flash Boys",
+    "author": "Michael Lewis",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19224077",
+    "title": "So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love",
+    "author": "Cal Newport",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "11415101",
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "23840234",
+    "title": "Stop Reading Self Help Books",
+    "author": "Kate Lester",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "22709382",
+    "title": "A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra)",
+    "author": "Barbara Oakley",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "13541678",
+    "title": "Functional Programming in Scala",
+    "author": "Rúnar Bjarnason",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "8491236",
+    "title": "Deep Meditation - Pathway to Personal Freedom (AYP Enlightenment Series)",
+    "author": "Yogani",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "18904708",
+    "title": "Hedge Fund Market Wizards: How Winning Traders Win",
+    "author": "Jack D. Schwager",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "20775702",
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "22062124",
+    "title": "On the Run: Fugitive Life in an American City (Fieldwork Encounters and Discoveries)",
+    "author": "Alice Goffman",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19213015",
+    "title": "Volatility Trading (Wiley Trading)",
+    "author": "Euan Sinclair",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "18951183",
+    "title": "The 4-Hour Work Week: Escape the 9-5, Live Anywhere and Join the New Rich",
+    "author": "Timothy Ferriss",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "11554458",
+    "title": "Homicide: A Year On The Killing Streets (Canons)",
+    "author": "David Simon",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "23821749",
+    "title": "Summary of The Magic of Thinking Big by David J. Schwartz",
+    "author": "Eighty Twenty Publishing",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "19232097",
+    "title": "My Life as a Quant: Reflections on Physics and Finance",
+    "author": "Emanuel Derman",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "13663747",
+    "title": "Essential Scrum: A Practical Guide to the Most Popular Agile Process",
+    "author": "Kenneth S. Rubin",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "23203711",
+    "title": "What I Learned Losing A Million Dollars",
+    "author": "Jim Paul",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "17715746",
+    "title": "How to Get Filthy Rich in Rising Asia",
+    "author": "Mohsin Hamid",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "6571744",
+    "title": "Influence: The Psychology of Persuasion (Collins Business Essentials Book 16)",
+    "author": "Robert B. Cialdini",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "11324542",
+    "title": "Siddhartha",
+    "author": "Hermann Hesse",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "21820378",
+    "title": "Mastering Bitcoin: Unlocking Digital Cryptocurrencies",
+    "author": "Andreas M. Antonopoulos",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "10084047",
+    "title": "The Presentation Coach: Bare Knuckle Brilliance For Every Presenter",
+    "author": "Graham G. Davies",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2017
+  },
+  {
+    "id": "179133",
+    "title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+    "author": "Eric Evans",
+    "year": 2017,
+    "readAt": "2017-03-04",
+    "addedYear": 2016
+  },
+  {
+    "id": "41611",
+    "title": "Hard Drive: Bill Gates and the Making of the Microsoft Empire",
+    "author": "James Wallace",
+    "year": 2017,
+    "readAt": "2017-03-04",
+    "addedYear": 2017
+  },
+  {
+    "id": "18949554",
+    "title": "How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life",
+    "author": "Scott Adams",
+    "year": 2017,
+    "readAt": "2017-01-05",
+    "addedYear": 2017
+  },
+  {
+    "id": "27985224",
+    "title": "Deep Work: Rules for Focused Success in a Distracted World",
+    "author": "Cal Newport",
+    "year": 2016,
+    "readAt": "2016-12-25",
+    "addedYear": 2016
+  },
+  {
+    "id": "19723223",
+    "title": "Antifragile: Things that Gain from Disorder",
+    "author": "Nassim Nicholas Taleb",
+    "year": 2016,
+    "readAt": "2016-12-14",
+    "addedYear": 2016
+  },
+  {
+    "id": "19899669",
+    "title": "Wit and Wisdom from Poor Richard's Almanack",
+    "author": "Benjamin Franklin",
+    "year": 2016,
+    "readAt": "2016-10-01",
+    "addedYear": 2016
+  },
+  {
+    "id": "28602719",
+    "title": "Domain-Driven Design Distilled",
+    "author": "Vaughn Vernon",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2016
+  },
+  {
+    "id": "23251016",
+    "title": "Zero to One: Notes on Start Ups, or How to Build the Future",
+    "author": "Blake Masters",
+    "year": 2016,
+    "readAt": "2016-07-07",
+    "addedYear": 2015
+  },
+  {
+    "id": "30164381",
+    "title": "Blockchain Revolution: How the Technology Behind Bitcoin and Other Cryptocurrencies is Changing the World",
+    "author": "Don Tapscott",
+    "year": 2016,
+    "readAt": "2016-05-29",
+    "addedYear": 2016
+  },
+  {
+    "id": "127930",
+    "title": "Effective Java",
+    "author": "Joshua Bloch",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2016
+  },
+  {
+    "id": "10284614",
+    "title": "The Clean Coder: A Code of Conduct for Professional Programmers",
+    "author": "Robert C. Martin",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2016
+  },
+  {
+    "id": "20433135",
+    "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability",
+    "author": "Krug Steve",
+    "year": 2016,
+    "readAt": "2016-02-10",
+    "addedYear": 2016
+  },
+  {
+    "id": "25850253",
+    "title": "Peace Is Every Step: The Path of Mindfulness in Everyday Life",
+    "author": "Thich Nhat Hanh",
+    "year": 2016,
+    "readAt": "2016-02-12",
+    "addedYear": 2016
+  },
+  {
+    "id": "11372741",
+    "title": "Outliers: The Story of Success",
+    "author": "Malcolm Gladwell",
+    "year": 2016,
+    "readAt": "2016-01-17",
+    "addedYear": 2015
+  },
+  {
+    "id": "18398349",
+    "title": "Choose Yourself",
+    "author": "James Altucher",
+    "year": 2016,
+    "readAt": "2016-01-11",
+    "addedYear": 2016
+  },
+  {
+    "id": "14059373",
+    "title": "The Power of Habit: Why We Do What We Do and How to Change",
+    "author": "Charles Duhigg",
+    "year": 2015,
+    "readAt": "2015-11-20",
+    "addedYear": 2015
+  },
+  {
+    "id": "23198201",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "year": 2015,
+    "readAt": "2015-11-08",
+    "addedYear": 2015
+  },
+  {
+    "id": "276079",
+    "title": "Hacker's Delight",
+    "author": "Henry S. Warren Jr.",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "405790",
+    "title": "Beautiful Code: Leading Programmers Explain How They Think",
+    "author": "Andy Oram",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "8032112",
+    "title": "The Big Short: Inside the Doomsday Machine",
+    "author": "Michael Lewis",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "81922",
+    "title": "Rich Dad's Cashflow Quadrant: Rich Dad's Guide to Financial Freedom",
+    "author": "Robert T. Kiyosaki",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "11084145",
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "1005",
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "2615",
+    "title": "The Innovator's Dilemma: The Revolutionary Book that Will Change the Way You Do Business",
+    "author": "Clayton M. Christensen",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "1032758",
+    "title": "The Practice of Programming (Addison-Wesley Professional Computing Series)",
+    "author": "Brian W. Kernighan",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "85012",
+    "title": "Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions (Addison-Wesley Signature Series (Fowler))",
+    "author": "Gregor Hohpe",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "127932",
+    "title": "Java Concurrency in Practice",
+    "author": "Brian Goetz",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "231262",
+    "title": "Head First Java",
+    "author": "Kathy Sierra",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "58128",
+    "title": "Head First Design Patterns",
+    "author": "Eric Freeman",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "85009",
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "author": "Erich Gamma",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "3735293",
+    "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "author": "Robert C. Martin",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "44936",
+    "title": "Refactoring: Improving the Design of Existing Code (Addison-wesley Object Technology Series)",
+    "author": "Martin Fowler",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "1633",
+    "title": "Getting Things Done: The Art of Stress-Free Productivity",
+    "author": "David Allen",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "10127019",
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "81948",
+    "title": "The E-myth Revisited",
+    "author": "Michael E. Gerber",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "67825",
+    "title": "Peopleware: Productive Projects and Teams",
+    "author": "Tom DeMarco",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "98233",
+    "title": "Founders at Work: Stories of Startups' Early Days",
+    "author": "Jessica Livingston",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "8520610",
+    "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+    "author": "Susan Cain",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  },
+  {
+    "id": "6732019",
+    "title": "Rework",
+    "author": "Jason Fried",
+    "year": null,
+    "readAt": null,
+    "addedYear": 2015
+  }
+]

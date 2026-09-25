@@ -1,0 +1,82 @@
+[
+  {
+    "id": "105",
+    "title": "Chapterhouse: Dune",
+    "author": "Frank Herbert",
+    "year": 2025,
+    "reread": false,
+    "readAt": "2025-10-03"
+  },
+  {
+    "id": "57663591",
+    "title": "The Lays of Beleriand",
+    "author": "J.R.R. Tolkien",
+    "year": 2025,
+    "reread": false,
+    "readAt": "2025-06-04"
+  },
+  {
+    "id": "786031",
+    "title": "Dreamer of Dune: The Biography of Frank Herbert",
+    "author": "Brian Herbert",
+    "year": 2025,
+    "reread": false,
+    "readAt": "2025-02-27"
+  },
+  {
+    "id": "53774",
+    "title": "Heretics of Dune",
+    "author": "Frank Herbert",
+    "year": 2025,
+    "reread": false,
+    "readAt": "2025-01-04"
+  },
+  {
+    "id": "77171",
+    "title": "God Emperor of Dune",
+    "author": "Frank Herbert",
+    "year": 2024,
+    "reread": false,
+    "readAt": "2024-11-01"
+  },
+  {
+    "id": "44492286",
+    "title": "Children of Dune",
+    "author": "Frank Herbert",
+    "year": 2024,
+    "reread": true,
+    "readAt": "2024-09-13"
+  },
+  {
+    "id": "16199333",
+    "title": "The Book of Lost Tales, Part II",
+    "author": "J.R.R. Tolkien",
+    "year": 2024,
+    "reread": false,
+    "readAt": "2024-06-30"
+  },
+  {
+    "id": "44492285",
+    "title": "Dune Messiah",
+    "author": "Frank Herbert",
+    "year": 2024,
+    "reread": true,
+    "readAt": "2024-05-03"
+  },
+  {
+    "id": "7347",
+    "title": "The Book of Lost Tales, Part I",
+    "author": "J.R.R. Tolkien",
+    "year": 2024,
+    "reread": false,
+    "readAt": "2024-04-05"
+  },
+  {
+    "id": "44767458",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "year": 2024,
+    "reread": true,
+    "readAt": "2024-03-01"
+  }
+]
