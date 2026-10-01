@@ -10,9 +10,10 @@ interface Props {
   date: Date;
   tags?: string[];
   image?: string;
+  audio?: string;
 }
 
-const { title, description, date, tags = [], image } = Astro.props;
+const { title, description, date, tags = [], image, audio } = Astro.props;
 ---
 <BaseLayout
   title={title}
@@ -32,7 +33,22 @@ const { title, description, date, tags = [], image } = Astro.props;
         ))}
       </div>
     </header>
+    {audio && (
+      <aside class="article-audio" aria-label="Audio version">
+        <p><strong>Listen to this article</strong><br /><small>Narrated with an AI version of my voice.</small></p>
+        <audio controls preload="none" aria-label={`Listen to ${title}`} src={audio}>
+          <a href={audio}>Download the audio</a>
+        </audio>
+      </aside>
+    )}
     <PostImages><slot /></PostImages>
     <PostCitation title={title} date={date} />
   </article>
 </BaseLayout>
+
+<style>
+  .article-audio { margin: 1.5rem 0 2rem; padding: 1rem 1.25rem; border: 1px solid var(--border); border-radius: 8px; }
+  .article-audio p { margin: 0 0 .75rem; }
+  .article-audio small { color: var(--fg-muted); }
+  .article-audio audio { width: 100%; display: block; }
+</style>

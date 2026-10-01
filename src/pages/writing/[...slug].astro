@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { existsSync } from 'node:fs';
 import PostLayout from '../../layouts/PostLayout.astro';
 
 export async function getStaticPaths() {
@@ -11,6 +12,9 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const recordings = import.meta.glob<{ src: string }>('../../../public/audio/*.json', { eager: true, import: 'default' });
+const recording = recordings[`../../../public/audio/${post.id}.json`];
+const audio = recording && existsSync(`public${recording.src}`) ? recording.src : undefined;
 const { Content } = await render(post);
 
 // Per-post OG image. Resolution order:
@@ -25,6 +29,7 @@ const ogImage = post.data.ogImage ?? `/og/${post.id}.png`;
   date={post.data.date}
   tags={post.data.tags}
   image={ogImage}
+  audio={audio}
 >
   <Content />
 </PostLayout>

@@ -5,3 +5,6 @@ dist
 .env
 .env.*
 .wrangler
+
+.audio-preview/
+public/audio/*.tmp

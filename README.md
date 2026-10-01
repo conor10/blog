@@ -69,3 +69,65 @@ Pushes to `main` auto-deploy to GitHub Pages via `.github/workflows/deploy.yml`.
 - **Site-wide default** is `public/og-default.png` (1200×630). Any page without its own card uses this.
 - **Per-post cards are auto-generated** from the post title and date via [`astro-og-canvas`](https://github.com/delucis/astro-og-canvas). Routes are at `/og/{slug}.png`; they build once per prod build.
 - **To override a post's card**, set `ogImage: "/path/to/image.png"` in its frontmatter (supports any URL or public-absolute path).
+
+## Article narration
+
+Generate audio from a published `/writing/` article using your ElevenLabs voice.
+Requires Node 22+; no API calls happen during normal builds or visitor playback.
+
+Create an ignored `.env.local` file in the project root:
+
+```dotenv
+ELEVENLABS_API_KEY=your_api_key
+ELEVENLABS_VOICE_ID=your_cloned_voice_id
+```
+
+Create a key with Text to Speech permission in ElevenLabs and copy the voice ID
+from your voice's menu. Keep the key local; do not use a `PUBLIC_` prefix.
+
+```sh
+# Builds the site and saves a free text preview under .audio-preview/
+npm run audio -- why-omarchy-is-the-operating-system-for-the-agentic-age
+
+# Preview all published Writing articles (excludes the historical archive)
+npm run audio -- --all
+
+# Generate all Writing articles, reusing unchanged recordings
+npm run audio -- --all --generate
+
+# Generate one article (uses ElevenLabs credits)
+npm run audio -- why-omarchy-is-the-operating-system-for-the-agentic-age --generate
+```
+
+The default model is `eleven_multilingual_v2` (10,000 characters per article).
+For longer articles, set `ELEVENLABS_MODEL_ID=eleven_flash_v2_5` in `.env.local`
+(up to 40,000 characters). Longer texts are rejected before an API request.
+The character count is shown before generation; credit cost depends on the model.
+
+Narration inserts a 1.5-second pause after the title using an ElevenLabs break tag.
+It includes the title and rendered body, retaining link text and skipping
+site navigation and scripts. Subheadings receive a one-second pause before and
+a half-second pause after. Images, standard figure captions, and italic captions
+immediately following an image (in the same or next paragraph) are skipped.
+Ordinary italic prose is retained. This structural detection cannot determine
+whether a caption contains an essential point: review the preview. Add
+`data-narration="A concise spoken explanation"` to an image, figure or caption
+element to explicitly supply narration, or use the full text override below.
+Code blocks, tables and equations receive spoken
+references to the written article. Review the preview for technical content and
+interactive diagrams. For pronunciation adjustments or a custom spoken version,
+save the complete narration in `narration/<slug>.txt`; this overrides extraction.
+
+The script saves a versioned MP3 and metadata in `public/audio/`. Commit both,
+then rebuild/deploy to show the player automatically. Unchanged text, voice and
+model reuse the existing recording; `--force` explicitly spends credits again.
+Failed requests leave the previous recording intact and are never auto-retried.
+A batch stops at the first failure. After a connection failure, run
+`npm run audio -- --all --recover` first: this downloads matching recordings from
+the latest 100 history items without generation charges (requires History: Read).
+It matches the exact narration, voice and model. Then rerun `--all --generate`
+to resume using cached successes. Do not blindly regenerate a lost response.
+Article edits do not silently regenerate audio: rerun the command when updating
+an article with narration. Generation currently covers the main writing section.
+
+Run offline checks with `node --test tests/article-audio.test.mjs`.
