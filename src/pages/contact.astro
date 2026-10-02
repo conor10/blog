@@ -1,152 +1,237 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { FORMSPREE_ENDPOINT } from '../consts';
+const agentId = import.meta.env.PUBLIC_ELEVENLABS_AGENT_ID || '';
 ---
-<BaseLayout
-  title="Contact"
-  description="Send Conor Svensson a message."
->
-  <article class="prose">
-    <h1>Contact</h1>
-    <p>
-      For most things, dropping a note here is the fastest way to reach me.
-      I read everything and usually reply within a few days.
-    </p>
-
-    <form id="contact-form" class="contact-form" action={FORMSPREE_ENDPOINT} method="POST">
-      <label>
-        <span>Name</span>
-        <input type="text" name="name" autocomplete="name" required />
-      </label>
-      <label>
-        <span>Email</span>
-        <input type="email" name="email" autocomplete="email" required />
-      </label>
-      <label>
-        <span>Message</span>
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-
-      <!-- Honeypot for spam bots; Formspree ignores submissions with this filled. -->
-      <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-      <input type="hidden" name="_subject" value="Contact via conorsvensson.com" />
-
-      <button type="submit">Send message</button>
-    </form>
-
-    <div id="contact-success" class="contact-status success" hidden>
-      Thanks — I'll reply when I can.
+<BaseLayout title="Get in touch" description="Speak to my agent or leave a message in chat.">
+  <article class="contact" data-agent-id={agentId}>
+    <div class="mode-switch" role="group" aria-label="Contact mode">
+      <button type="button" data-mode="chat" aria-pressed="false">Chat</button>
+      <button type="button" data-mode="voice" aria-pressed="true">Voice</button>
     </div>
-    <div id="contact-error" class="contact-status error" hidden>
-      Something went wrong sending that. Please try again in a moment.
-    </div>
-
-    <p style="margin-top: 3rem; color: var(--fg-muted); font-size: 0.9rem;">
-      Also on <a href="https://x.com/ConorSvensson">X</a> and
-      <a href="https://www.linkedin.com/in/conorsvensson">LinkedIn</a>.
-    </p>
+    <section class="agent-panel" aria-label="Contact Conor’s AI agent">
+      <div class="orb" aria-hidden="true"><div class="orb-colour"></div></div>
+      <h1 class="sr-only">Speak to my agent</h1>
+      <button class="start-button" type="button" disabled={!agentId}>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a15 15 0 0 1-7-7l2-2-2-5Z"/></svg>
+        <span>Speak to my agent</span>
+      </button>
+      <p class="status" role="status" aria-live="polite">{agentId ? '' : 'Currently unavailable. Please email me below.'}</p>
+      <div class="chat-panel" hidden>
+        <div class="messages" role="log" aria-label="Chat messages" aria-live="polite"></div>
+        <form class="chat-form">
+          <label class="sr-only" for="chat-message">Your message</label>
+          <textarea id="chat-message" placeholder="Type a message…" rows="1" maxlength="4000" required></textarea>
+          <button type="submit" aria-label="Send message" disabled={!agentId}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+        </form>
+        <button class="new-chat" type="button" hidden>Start a new chat</button>
+        <button class="end-chat" type="button" hidden>End chat</button>
+      </div>
+    </section>
+    <p class="email">Prefer email? <a href="mailto:hi@conorsvensson.com">hi@conorsvensson.com</a></p>
   </article>
-</BaseLayout>
+<script>
+  import type { Conversation } from '@elevenlabs/client';
+  const root = document.querySelector<HTMLElement>('.contact')!;
+  const agentId = root.dataset.agentId!;
+  const switches = [...root.querySelectorAll<HTMLButtonElement>('[data-mode]')];
+  const start = root.querySelector<HTMLButtonElement>('.start-button')!;
+  const startLabel = start.querySelector('span')!;
+  const heading = root.querySelector('h1')!;
+  const status = root.querySelector<HTMLElement>('.status')!;
+  const chatPanel = root.querySelector<HTMLElement>('.chat-panel')!;
+  const messages = root.querySelector<HTMLElement>('.messages')!;
+  const form = root.querySelector<HTMLFormElement>('form')!;
+  const input = root.querySelector<HTMLTextAreaElement>('textarea')!;
+  const send = form.querySelector<HTMLButtonElement>('button')!;
+  const endChat = root.querySelector<HTMLButtonElement>('.end-chat')!;
+  const newChat = root.querySelector<HTMLButtonElement>('.new-chat')!;
+  let chatEnded = false;
+  let disconnected = false;
+  let receivedReply = false;
+  let mode: 'voice' | 'chat' = 'voice';
+  let session: Conversation | null = null;
+  let busy = false;
+  let failed = false;
 
-<style>
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 2rem 0 1.5rem;
+  function controls() {
+    switches.forEach(button => { button.disabled = busy || !!session; });
+    start.disabled = busy || !agentId;
+    send.disabled = busy || !agentId;
+    input.disabled = busy;
+    endChat.hidden = !session;
+    form.hidden = chatEnded;
+    newChat.hidden = !chatEnded;
+    startLabel.textContent = session ? 'End conversation' : 'Speak to my agent';
+    root.dataset.active = String(!!session);
   }
-  .contact-form label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    font-size: 0.9rem;
-    color: var(--fg-muted);
+  function addMessage(text: string, user = false) {
+    const bubble = document.createElement('p');
+    bubble.className = user ? 'message user' : 'message agent';
+    const author = document.createElement('span');
+    author.className = 'message-author';
+    author.textContent = user ? 'You' : 'Conor’s AI agent';
+    const content = document.createElement('span');
+    content.className = 'message-content';
+    content.textContent = text;
+    bubble.append(author, content);
+    messages.append(bubble);
+    messages.scrollTop = messages.scrollHeight;
   }
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    font: inherit;
-    font-size: 1rem;
-    color: var(--fg);
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 0.6rem 0.75rem;
-    width: 100%;
+  async function connect() {
+    failed = false;
+    disconnected = false;
+    receivedReply = false;
+    busy = true;
+    status.textContent = 'Connecting…';
+    if (mode === 'chat') messages.replaceChildren();
+    controls();
+    try {
+      const { Conversation } = await import('@elevenlabs/client');
+      const connected = await Conversation.startSession({
+        agentId,
+        textOnly: mode === 'chat',
+        // Browser WebSockets send Origin, which the agent allowlist requires.
+        connectionType: 'websocket',
+        onMessage: ({ message, role }) => {
+          if (role === 'agent') receivedReply = true;
+          if (mode === 'chat' && role === 'agent') addMessage(message);
+        },
+        onModeChange: ({ mode: speakingMode }) => {
+          root.dataset.speaking = String(speakingMode === 'speaking');
+          if (session && mode === 'voice') status.textContent = speakingMode === 'speaking' ? 'Speaking…' : 'Listening…';
+        },
+        onDisconnect: (details) => {
+          disconnected = true;
+          const connectionFailed = details.reason === 'error' || (!receivedReply && details.reason !== 'user');
+          session = null;
+          root.dataset.speaking = 'false';
+          if (connectionFailed) {
+            failed = true;
+            status.textContent = 'The connection failed. Please try again or email me below.';
+          } else if (!failed) {
+            status.textContent = 'Conversation ended.';
+            if (mode === 'chat') chatEnded = true;
+          }
+          controls();
+        },
+        onError: () => {
+          failed = true;
+          status.textContent = 'Couldn’t connect. Please try again or email me below.';
+        },
+      });
+      if (failed || disconnected) { await connected.endSession(); return null; }
+      session = connected;
+      status.textContent = mode === 'voice' ? 'Listening…' : '';
+      return connected;
+    } catch {
+      failed = true;
+      status.textContent = mode === 'voice'
+        ? 'Couldn’t start the call. Check microphone access, or try chat.'
+        : 'Couldn’t connect. Please try again or email me below.';
+      return null;
+    } finally {
+      busy = false;
+      controls();
+    }
   }
-  .contact-form textarea {
-    resize: vertical;
-    min-height: 8rem;
-    line-height: 1.55;
+  async function end() {
+    if (!session || busy) return;
+    busy = true;
+    controls();
+    try { await session.endSession(); }
+    catch { status.textContent = 'Connection closed.'; }
+    finally { session = null; busy = false; controls(); }
   }
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    outline: none;
-    border-color: var(--fg-muted);
-  }
-  .contact-form button {
-    align-self: flex-start;
-    font: inherit;
-    padding: 0.55rem 1.2rem;
-    background: var(--fg);
-    color: var(--bg);
-    border: 0;
-    border-radius: var(--radius);
-    cursor: pointer;
-  }
-  .contact-form button:hover { opacity: 0.88; }
-  .contact-form button:disabled { opacity: 0.6; cursor: progress; }
-
-  .honeypot {
-    position: absolute !important;
-    left: -9999px !important;
-    width: 1px; height: 1px;
-    opacity: 0;
-  }
-
-  .contact-status {
-    padding: 0.85rem 1rem;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    margin: 1rem 0;
-    font-size: 0.95rem;
-  }
-  .contact-status.success { border-color: var(--accent); color: var(--fg); }
-  .contact-status.error   { color: var(--fg); }
-</style>
-
-<script is:inline>
-  (function () {
-    const form = document.getElementById('contact-form');
-    const ok = document.getElementById('contact-success');
-    const err = document.getElementById('contact-error');
-    if (!form || !ok || !err) return;
-
-    form.addEventListener('submit', async (event) => {
+  switches.forEach(button => button.addEventListener('click', () => {
+    if (busy || session) return;
+    mode = button.dataset.mode as 'voice' | 'chat';
+    root.dataset.mode = mode;
+    switches.forEach(tab => tab.setAttribute('aria-pressed', String(tab === button)));
+    heading.textContent = mode === 'voice' ? 'Speak to my agent' : 'Chat with my agent';
+    start.hidden = mode === 'chat';
+    chatPanel.hidden = mode !== 'chat';
+    status.textContent = !agentId ? 'Currently unavailable. Please email me below.' : mode === 'chat' && chatEnded ? 'Conversation ended.' : '';
+    controls();
+    if (mode === 'chat') (chatEnded ? newChat : input).focus();
+  }));
+  start.addEventListener('click', () => session ? end() : connect());
+  endChat.addEventListener('click', end);
+  newChat.addEventListener('click', () => {
+    chatEnded = false;
+    messages.replaceChildren();
+    input.value = '';
+    input.style.height = 'auto';
+    status.textContent = '';
+    controls();
+    input.focus();
+  });
+  input.addEventListener('input', () => {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 96) + 'px';
+    session?.sendUserActivity();
+  });
+  input.addEventListener('keydown', event => {
+    if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
       event.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      ok.hidden = true;
-      err.hidden = true;
-
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' },
-        });
-        if (res.ok) {
-          form.hidden = true;
-          ok.hidden = false;
-          ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          err.hidden = false;
-          btn.disabled = false;
-        }
-      } catch (_) {
-        err.hidden = false;
-        btn.disabled = false;
-      }
-    });
-  })();
+      form.requestSubmit();
+    }
+  });
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    const message = input.value.trim();
+    if (!message || busy || !agentId || chatEnded) return;
+    // Connecting never requests microphone access in text-only mode.
+    const current = session || await connect();
+    if (!current) return;
+    try {
+      current.sendUserMessage(message);
+      addMessage(message, true);
+      input.value = '';
+      input.style.height = 'auto';
+      input.focus();
+    } catch { status.textContent = 'Message not sent. Please try again.'; }
+  });
+  window.addEventListener('pagehide', () => { session?.endSession(); });
 </script>
+</BaseLayout>
+<style>
+  .contact { max-width: 38rem; margin: 1rem auto 0; text-align: center; }
+  .mode-switch { display: inline-flex; gap: .25rem; padding: .25rem; border-radius: 2rem; background: var(--bg-muted); }
+  button, textarea { font: inherit; }
+  button { cursor: pointer; }
+  button:disabled { cursor: default; opacity: .55; }
+  button:focus-visible, textarea:focus-visible { outline: 2px solid #559bc8; outline-offset: 4px; }
+  .mode-switch button { border: 1px solid transparent; background: transparent; color: var(--fg-muted); padding: .55rem 1.15rem; border-radius: 2rem; }
+  .mode-switch button[aria-pressed="true"] { background: var(--bg); border-color: var(--border); color: var(--fg); box-shadow: 0 2px 4px #0000000d; }
+  .agent-panel { padding-top: 3rem; }
+  .orb { width: clamp(180px, 45vw, 256px); aspect-ratio: 1; margin: 0 auto 2rem; border-radius: 50%; overflow: hidden; position: relative; isolation: isolate; background: #b5dbea; box-shadow: inset -12px -15px 30px #275c7438; }
+  .orb-colour { position: absolute; inset: -20%; background: radial-gradient(ellipse at 30% 65%, #f4ba51 0%, transparent 46%), radial-gradient(ellipse at 65% 20%, #368fbe 0%, transparent 47%), radial-gradient(ellipse at 70% 85%, #8bc4a6 0%, transparent 43%), radial-gradient(ellipse at 40% 35%, #f4e8d9 5%, #c0dbe8 65%); filter: blur(12px); animation: drift 16s ease-in-out infinite alternate; }
+  .orb::after { content: ''; position: absolute; inset: 0; border-radius: inherit; opacity: .22; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' opacity='.6' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); mix-blend-mode: multiply; }
+  [data-speaking="true"] .orb-colour { animation-duration: 2s; }
+  h1 { font-size: 1.35rem; font-weight: 500; margin: 0 0 1.25rem; }
+  .start-button { display: inline-flex; align-items: center; justify-content: center; gap: .65rem; border: 0; border-radius: 2rem; padding: .9rem 1.4rem; color: var(--bg); background: var(--fg); }
+  .start-button[hidden], [hidden] { display: none !important; }
+  .status { min-height: 1.5em; margin: 1rem 0; font-size: .85rem; color: var(--fg-muted); }
+  .email { margin-top: 2rem; font-size: .9rem; color: var(--fg-muted); }
+  [data-mode="chat"] .agent-panel { display: flex; flex-direction: column; width: 100%; max-width: 26rem; height: 32rem; max-height: 72svh; min-height: 24rem; box-sizing: border-box; margin: 1rem auto 0; padding: 1.25rem; border: 1px solid var(--border); border-radius: 2.5rem; background: var(--bg-muted); box-shadow: 0 8px 32px #00000008; }
+  [data-mode="chat"] .orb { flex-shrink: 0; width: 40px; margin: 0 0 .5rem .75rem; }
+  [data-mode="chat"] .status { min-height: 0; margin: 0 .75rem; text-align: left; }
+  [data-mode="chat"] .status:empty { display: none; }
+  .chat-panel { display: flex; flex-direction: column; flex: 1; min-height: 0; text-align: left; }
+  .messages { flex: 1; min-height: 0; overflow-y: auto; padding: .5rem 0; scrollbar-width: thin; }
+  .messages :global(.message) { padding: .75rem 1rem; border-radius: 1.4rem; margin: .5rem 0; background: var(--bg-muted); white-space: pre-wrap; overflow-wrap: anywhere; }
+  .messages :global(.user) { margin-left: 2.5rem; border: 1px solid #396080; background: #1c3850; color: #f0f7ff; border-bottom-right-radius: .4rem; }
+  .messages :global(.agent) { margin-right: 2.5rem; background: var(--bg); border: 1px solid var(--border); border-bottom-left-radius: .4rem; }
+  .messages :global(.message-author) { display: block; font-size: .7rem; font-weight: 650; letter-spacing: .025em; margin-bottom: .4rem; opacity: .8; }
+  .messages :global(.message-content) { display: block; }
+  .new-chat { align-self: center; border: 1px solid var(--border); border-radius: 2rem; padding: .75rem 1.3rem; background: var(--fg); color: var(--bg); margin-top: .5rem; }
+  .chat-form { display: flex; align-items: center; gap: .5rem; flex-shrink: 0; border: 1px solid var(--border); padding: .4rem .45rem .4rem 1.1rem; border-radius: 2rem; background: var(--bg); box-shadow: 0 2px 4px #00000005; }
+  textarea { resize: none; width: 100%; min-width: 0; max-height: 6rem; line-height: 1.5; border: 0; background: transparent; color: var(--fg); padding: .35rem; }
+  .chat-form:focus-within { border-color: #559bc8; box-shadow: 0 0 0 2px #559bc825; }
+  .chat-form textarea:focus-visible { outline: none; }
+  .chat-form button { display: grid; place-items: center; flex-shrink: 0; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 50%; background: var(--fg); color: var(--bg); padding: 0; }
+  .end-chat { display: block; margin: .75rem auto; border: 0; background: transparent; color: var(--fg-muted); font-size: .85rem; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+  @keyframes drift { from { transform: rotate(-12deg) scale(1); } to { transform: rotate(25deg) scale(1.08); } }
+  @media (prefers-reduced-motion: reduce) { .orb-colour { animation: none; } }
+</style>

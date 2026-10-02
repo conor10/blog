@@ -8,3 +8,5 @@ dist
 
 .audio-preview/
 public/audio/*.tmp
+
+.voice-inbox/
