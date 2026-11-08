@@ -15,11 +15,11 @@ const imported = goodreads
   .filter((book) => !alreadyListed.has(book.id) && !excluded.has(book.id) && !corrected.has(`${book.id}:${book.year}`))
   .map((book) => ({ ...book, reread: rereads.has(book.id) }));
 const books = [...additions, ...imported];
-const undated = books.filter((book) => book.readAt === null);
+const undated = books.filter((book) => book.year === null);
 const years = [...new Set(books.map((book) => book.year).filter((year) => year !== null))].sort((a, b) => b - a);
 const groups = years.map((year) => ({
   year,
-  // ISO completion dates sort chronologically; equal/unknown dates keep source order.
+  // Exact dates sort newest first; approximate dates follow, retaining source order.
   books: books.filter((book) => book.year === year)
     .sort((a, b) => (b.readAt ?? '').localeCompare(a.readAt ?? '')),
 }));
@@ -28,7 +28,7 @@ const groups = years.map((year) => ({
 {groups.map((group) => <section class="reading-year">
   <h2 id={`read-in-${group.year}`}>Read in {group.year}</h2>
   <ul>{group.books.map((book) => <li>
-    <BookLink href={`https://www.goodreads.com/book/show/${book.id}`}>{book.title}</BookLink> — {book.author}{book.reread && ' (re-read)'}
+    <BookLink href={`https://www.goodreads.com/book/show/${book.id}`}>{book.title}</BookLink> — {book.author}{book.reread && ' (re-read)'}{'readPeriod' in book && book.readPeriod && ` (${book.readPeriod})`}
   </li>)}</ul>
 </section>)}
 

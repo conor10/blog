@@ -68,11 +68,34 @@ the Ring (3263607), The Two Towers (222910), and The Return of the King (838729)
 are re-reads. The component labels them accordingly, alongside the three Dune
 re-reads already recorded in the author additions.
 
+## Chess additions
+
+Conor supplied three additional completed books on 6 November 2026, with dates
+interpreted as day/month/year:
+
+- Play Winning Chess — Yasser Seirawan: 6 October 2024 (`2024-10-06`). Added to
+  `src/data/reading-additions.json` and sorted between God Emperor of Dune and
+  Children of Dune in the 2024 list.
+- Everyone's First Chess Workbook — Peter Giannatos: 4 January 2026
+  (`2026-01-04`). Added at the end of the hand-maintained 2026 list in
+  `src/pages/reading.mdx`.
+- Perpetual Chess Improvement: Practical Chess Advice from World-Class Players
+  and Dedicated Amateurs — Ben Johnson: late 2025. Stored with `year: 2025`,
+  `readAt: null`, and `readPeriod: "late 2025"`; no exact completion date is
+  inferred. It appears after the precisely dated 2025 entries, with its supplied
+  period displayed. Only entries with no known completion year belong in the
+  undated section.
+
+Book references: [Play Winning Chess](https://www.goodreads.com/book/show/56311991),
+[Everyone's First Chess Workbook](https://www.newinchess.com/everyone-s-first-chess-workbook),
+and [Perpetual Chess Improvement](https://www.goodreads.com/book/show/177231024).
+
 ## Current presentation
 
-The 142 dated reading events are followed by all 94 undated entries under
+The 144 reading events with known completion years are followed by all 94 undated entries under
 “Read — date not recorded”, with a link to Conor's Goodreads read shelf.
 Individual added-year labels are omitted. Each year is a level-two heading
 continuing the curated 2026 list; there is no “Earlier reading” heading or
 separate search. Re-read labels, cookbook exclusion and descending completion-date
-ordering remain. The component displays 236 reading events in total.
+ordering remain for entries with exact completion dates; approximate dates follow
+within their known year. The component displays 238 reading events in total.
