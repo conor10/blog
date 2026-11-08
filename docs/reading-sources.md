@@ -30,6 +30,13 @@ Children of Dune. These entries are merged with the Goodreads entries and sorted
 by completion date descending within each year. Ties and undated entries retain
 source order; no alphabetical sorting is applied.
 
+Further additions supplied on 6 November 2026 were Play Winning Chess
+(6 October 2024), Everyone's First Chess Workbook (4 January 2026), and Perpetual
+Chess Improvement (late 2025). They use the existing yearly lists and title–author
+format. Dates are retained only for organisation; individual completion dates
+are not displayed. Perpetual Chess Improvement has a known year but no exact
+completion date, so it appears only under 2025, after the precisely dated entries.
+
 The ten supplied entries add nine reading events: Book of Lost Tales Part I
 replaces its existing 2024 entry. The three 2024 Dune re-reads remain separate
 from their earlier reading years and are labelled explicitly. After excluding cookbooks, there are 236
@@ -67,28 +74,6 @@ Conor confirmed that the 2020 entries for The Hobbit (5907), The Fellowship of
 the Ring (3263607), The Two Towers (222910), and The Return of the King (838729)
 are re-reads. The component labels them accordingly, alongside the three Dune
 re-reads already recorded in the author additions.
-
-## Chess additions
-
-Conor supplied three additional completed books on 6 November 2026, with dates
-interpreted as day/month/year:
-
-- Play Winning Chess — Yasser Seirawan: 6 October 2024 (`2024-10-06`). Added to
-  `src/data/reading-additions.json` and sorted between God Emperor of Dune and
-  Children of Dune in the 2024 list.
-- Everyone's First Chess Workbook — Peter Giannatos: 4 January 2026
-  (`2026-01-04`). Added at the end of the hand-maintained 2026 list in
-  `src/pages/reading.mdx`.
-- Perpetual Chess Improvement: Practical Chess Advice from World-Class Players
-  and Dedicated Amateurs — Ben Johnson: late 2025. Stored with `year: 2025`,
-  `readAt: null`, and `readPeriod: "late 2025"`; no exact completion date is
-  inferred. It appears after the precisely dated 2025 entries, with its supplied
-  period displayed. Only entries with no known completion year belong in the
-  undated section.
-
-Book references: [Play Winning Chess](https://www.goodreads.com/book/show/56311991),
-[Everyone's First Chess Workbook](https://www.newinchess.com/everyone-s-first-chess-workbook),
-and [Perpetual Chess Improvement](https://www.goodreads.com/book/show/177231024).
 
 ## Current presentation
 

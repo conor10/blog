@@ -28,7 +28,7 @@ const groups = years.map((year) => ({
 {groups.map((group) => <section class="reading-year">
   <h2 id={`read-in-${group.year}`}>Read in {group.year}</h2>
   <ul>{group.books.map((book) => <li>
-    <BookLink href={`https://www.goodreads.com/book/show/${book.id}`}>{book.title}</BookLink> — {book.author}{book.reread && ' (re-read)'}{'readPeriod' in book && book.readPeriod && ` (${book.readPeriod})`}
+    <BookLink href={`https://www.goodreads.com/book/show/${book.id}`}>{book.title}</BookLink> — {book.author}{book.reread && ' (re-read)'}
   </li>)}</ul>
 </section>)}
 
